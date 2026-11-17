@@ -24,6 +24,7 @@
   "@type": "Person",
   "name": "Murilo Brandão",
   "jobTitle": "AI Builder",
+  "email": "murilodb25@gmail.com",
   "sameAs": ["https://www.linkedin.com/in/murilobrandao-ia"],
   "address": {"@type": "PostalAddress", "addressLocality": "Castanhal", "addressRegion": "PA", "addressCountry": "BR"},
   "alumniOf": {"@type": "CollegeOrUniversity", "name": "FIAP, graduação em Inteligência Artificial (cursando, início em 2026, conclusão prevista em dezembro de 2027)"},
@@ -1001,6 +1002,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
           <dt>Idiomas</dt><dd>Português nativo · inglês intermediário: leio documentação técnica com facilidade</dd>
           <dt>Certificados</dt><dd>Google Ads (EBMD, 2024) · Branding (60 h) · Neuromarketing (40 h) · PNL (40 h)</dd>
           <dt>No ar</dt><dd>sciencepro.app.br · ppgspaa.ufra.edu.br · mundomiauauau.com.br · prosportsbr.com.br</dd>
+          <dt>E-mail</dt><dd><a href="mailto:murilodb25@gmail.com">murilodb25@gmail.com</a></dd>
           <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/murilobrandao-ia" target="_blank" rel="noopener">linkedin.com/in/murilobrandao-ia</a></dd>
         </dl>
       </div>
@@ -1266,6 +1268,25 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
           <div class="kpi"><b data-count="12">12</b><span>receitas de automação “Quando → Se → Então”</span></div>
         </div>
         <div class="reveal">
+          <div class="block-title">Como foi construído · rodadas de agentes</div>
+          <div class="canvas" data-flow>
+            <div class="canvas-bar"><b>Eu no plano e na direção, agentes na execução</b><span>mais de 300 agentes ao longo das rodadas</span></div>
+            <ol class="flow">
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 9h6M9 13h6M9 17h4"/></svg></span><b>Plano</b><span>escrevo o plano e as regras de negócio que todos os agentes seguem</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M6 20V10l6-5 6 5v10"/></svg></span><b>Fundação</b><span>7 agentes: esqueleto, banco e importação do sistema antigo</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><b>Módulos</b><span>14 agentes, um por domínio (caixa, fiado, estoque…), e 1 integrador</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></span><b>Auditoria</b><span>9 revisores independentes; cada problema é reproduzido antes de ser corrigido</span></li>
+              <li><span class="nic ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><b>Aceite</b><span>testes de ponta a ponta e pacote de instalação offline</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5l2 2M20 12a8 8 0 0 1-14 5l-2-2"/><path d="M20 4v5h-5M4 20v-5h5"/></svg></span><b>Iterações</b><span>CRM, agenda, prontuário e app no celular, no mesmo formato</span></li>
+            </ol>
+          </div>
+          <p class="note">A primeira versão, com a parte financeira completa, ficou pronta em menos de um dia: 168 agentes em 5 rodadas. O roteiro aguenta queda: quando o computador reiniciou no meio de uma rodada, a equipe retomou do ponto em que parou, sem refazer o que já estava pronto. Na revisão do CRM, os agentes acharam 28 problemas; todos foram reproduzidos e corrigidos antes do aceite.</p>
+        </div>
+        <div class="case-cols two reveal">
+          <div class="cbox"><small>Antes · sistema antigo</small><ul><li>Histórico preso num programa em FoxPro</li><li>Sem visão de faturamento, ticket médio ou lucro</li><li>Sem rotina para chamar de volta o cliente que parou de vir</li></ul></div>
+          <div class="cbox"><small>Depois · rotina com o sistema novo</small><ul><li>Painel da direção com faturamento, ticket médio e lucro estimado, comparados com o ano anterior</li><li>Lista de quem chamar hoje, por segmento de cliente</li><li>Fiado cobrado automaticamente a cada 15 dias</li><li>Recibo que já lembra a próxima visita</li><li>Cada pessoa da equipe vê só o que a sua função usa</li></ul></div>
+        </div>
+        <div class="reveal">
           <div class="block-title">Dashboards e telas</div>
           <div class="tabs" data-tabs>
             <div class="tab-bar" role="tablist" aria-label="Telas do sistema da clínica">
@@ -1300,7 +1321,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
         <div class="case-cols reveal">
           <div class="cbox"><small>O que eu construí</small><ul><li>Financeiro: caixa, comandas, fiado com cobrança, contas, estoque, 13 relatórios e DRE</li><li>Agenda, prontuário e consultório</li><li>CRM com ficha 360, RFM, NPS e funis em kanban</li><li>API pública com 21 rotas e webhooks assinados</li></ul></div>
           <div class="cbox"><small>Como a IA entrou</small><ul><li>Construído com orquestração de agentes: 14 agentes de domínio e 1 integrador</li><li>Auditoria por 9 agentes revisores com verificação adversarial</li><li>No produto: fluxo n8n em que um LLM classifica a mensagem do tutor e abre tarefa para a equipe</li></ul></div>
-          <div class="cbox"><small>Decisões de produto</small><ul><li>Roda offline na rede da clínica, com vários computadores em tempo real</li><li>Funciona como app no celular</li><li>LGPD desde o começo: campanha só com consentimento</li><li>Treinamento junto: 95 slides e guia com 118 tarefas</li></ul></div>
+          <div class="cbox"><small>Decisões de produto</small><ul><li>Roda offline na rede da clínica, com vários computadores em tempo real</li><li>Funciona como app no celular</li><li>LGPD desde o começo: campanha só com consentimento</li><li>Treinamento da equipe preparado: 95 slides e guia com 118 tarefas, numa clínica de demonstração</li></ul></div>
         </div>
         <p class="note">Stack: React 19, TypeScript, Node, Fastify, Socket.IO, SQLite, Drizzle, n8n, WhatsApp Cloud API, Vitest e Playwright.</p>
       </article>
@@ -1649,6 +1670,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
           </div>
         </div>
         <ul>
+          <li><small>E-mail</small><a href="mailto:murilodb25@gmail.com">murilodb25@gmail.com</a></li>
           <li><small>LinkedIn</small><a href="https://www.linkedin.com/in/murilobrandao-ia" target="_blank" rel="noopener">linkedin.com/in/murilobrandao-ia</a></li>
           <li><small>Onde estou</small><span>Castanhal (PA) · trabalho remoto</span></li>
           <li><small>Formação</small><span>Inteligência Artificial · FIAP · conclusão prevista em dez/2027</span></li>
