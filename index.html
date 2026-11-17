@@ -1,0 +1,2145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="canonical" href="https://murilo25db.github.io/portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://murilo25db.github.io/portfolio/">
+<meta property="og:title" content="Portfólio Murilo Brandão · AI Builder">
+<meta property="og:description" content="Portfólio de Murilo Brandão, AI Builder de Castanhal (PA): agentes de IA, automações e sistemas em produção. Science Pro, Samaú (UFRA), sistema de clínica veterinária e lojas online.">
+<meta property="og:image" content="https://murilo25db.github.io/portfolio/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfólio Murilo Brandão</title>
+<meta name="description" content="Murilo Brandão, 18 anos, Castanhal (PA). AI Builder: prompt engineering, orquestração de agentes, automações com n8n, vibe coding, APIs e análise de dados com IA. Science Pro, Samaú (UFRA), sistema da clínica Miau AuAu, Mundo Miau AuAu (R$ 1 milhão em vendas) e Pro Sports.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Murilo Brandão",
+  "jobTitle": "AI Builder",
+  "sameAs": ["https://www.linkedin.com/in/murilobrandao-ia"],
+  "address": {"@type": "PostalAddress", "addressLocality": "Castanhal", "addressRegion": "PA", "addressCountry": "BR"},
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "FIAP, graduação em Inteligência Artificial (cursando, turma 2026)"},
+  "knowsAbout": ["Prompt engineering avançado", "Orquestração de agentes (Claude, GPT, Gemini)", "Automações com n8n", "Vibe coding", "APIs e webhooks", "Análise de dados com IA", "RAG", "E-commerce", "Tráfego pago e SEO", "Cibersegurança de aplicações"],
+  "workExample": [
+    {"@type": "CreativeWork", "name": "Science Pro", "url": "https://www.sciencepro.app.br"},
+    {"@type": "CreativeWork", "name": "Samaú, assistente de IA do PPGSPAA/UFRA", "url": "https://ppgspaa.ufra.edu.br"},
+    {"@type": "CreativeWork", "name": "Sistema de gestão e CRM da Clínica Veterinária Miau AuAu"},
+    {"@type": "CreativeWork", "name": "Mundo Miau AuAu, e-commerce pet", "url": "https://www.mundomiauauau.com.br"},
+    {"@type": "CreativeWork", "name": "Loja online Pro Sports", "url": "https://prosportsbr.com.br"}
+  ]
+}
+</script>
+<style>
+/* Layout: abertura vermelha em motion → hero com a foto recortada como protagonista e selos 3D em volta
+   → comanda que confere os requisitos da vaga conforme o scroll → cardápio em formato de loja
+   → casos com fluxos que acendem, abas de telas e película de filme → rastreio (trajetória)
+   → modo de fazer → jeito iFood em cartas empilhadas → contato. Barra "sacola" acompanha a leitura.
+   Tema único claro, branco e vermelho, de propósito. */
+:root {
+  --red: #EA1D2C;
+  --red-dark: #C2121E;
+  --red-deep: #9E0C17;
+  --red-soft: #FDECEE;
+  --white: #FFFFFF;
+  --gray-50: #F7F7F7;
+  --gray-100: #EDEDED;
+  --gray-200: #DCDCDC;
+  --ink: #2F2F2F;
+  --text: #3E3E3E;
+  --muted: #6F6F6F;
+  --green: #2E9C5A;
+  --green-soft: #E6F5EC;
+  --amber: #8A5800;
+  --amber-soft: #FFF4DB;
+  --ufra: #1E6B43;
+  --ufra-soft: #E8F3EC;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.05), 0 2px 8px rgba(0,0,0,.05);
+  --shadow-lg: 0 2px 6px rgba(0,0,0,.05), 0 18px 40px rgba(0,0,0,.10);
+  /* Sul Sans (fonte do iFood) é licenciada; com a licença, coloque "Sul Sans" na frente da lista */
+  --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --ease: cubic-bezier(.2,.7,.2,1);
+  --spring: cubic-bezier(.34,1.56,.64,1);
+  --r-lg: 22px;
+  --r-md: 14px;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--white); color: var(--text); font-family: var(--font); font-size: 16px; line-height: 1.6; overflow-x: clip; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 40; background: var(--white); }
+a { color: inherit; }
+img, video { max-width: 100%; }
+:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; border-radius: 8px; }
+h1, h2, h3, h4 { color: var(--ink); line-height: 1.08; margin: 0; text-wrap: balance; letter-spacing: -0.03em; font-weight: 800; }
+p { margin: 0; }
+.wrap { position: relative; z-index: 1; max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+section { position: relative; padding-block: 96px; overflow-x: clip; }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--red); }
+.eyebrow::before { content: ""; width: 18px; height: 3px; border-radius: 2px; background: currentColor; }
+.sec-head { display: grid; gap: 14px; margin-bottom: 40px; max-width: 800px; }
+.sec-head h2 { font-size: clamp(32px, 4.6vw, 54px); }
+.sec-head p { color: var(--muted); font-size: 18px; }
+.sec-head.center { margin-inline: auto; text-align: center; justify-items: center; }
+/* Palavra-fantasma que desliza com o scroll atrás do título de cada seção */
+.ghost { position: absolute; left: -2%; top: 26px; z-index: 0; font: 800 clamp(96px, 16vw, 220px)/1 var(--font); letter-spacing: -0.06em; color: transparent; -webkit-text-stroke: 1.5px var(--gray-200); white-space: nowrap; pointer-events: none; user-select: none; transform: translate3d(calc(var(--gx, 0) * -180px), 0, 0); }
+.on-red .ghost { -webkit-text-stroke-color: rgba(255,255,255,.2); }
+
+/* ============ ABERTURA ============ */
+#intro { display: none; }
+.js #intro { display: grid; position: fixed; inset: 0; z-index: 200; place-items: center; background: var(--red); color: var(--white); overflow: hidden; cursor: pointer; }
+#intro.out { animation: introOut .9s cubic-bezier(.7,0,.3,1) forwards; }
+@keyframes introOut { 0% { clip-path: circle(150% at 50% 50%); } 100% { clip-path: circle(0% at 50% 46%); } }
+.intro-grid { position: absolute; inset: -20%; background: radial-gradient(circle, rgba(255,255,255,.14) 1.5px, transparent 2px) 0 0 / 28px 28px; animation: drift 6s linear infinite; }
+@keyframes drift { to { transform: translate(28px, 28px); } }
+.intro-ring { position: absolute; width: 140vmax; height: 140vmax; border-radius: 50%; border: 2px solid rgba(255,255,255,.14); animation: ring 2.4s var(--ease) both; }
+.intro-ring.r2 { animation-delay: .25s; } .intro-ring.r3 { animation-delay: .5s; }
+@keyframes ring { from { transform: scale(0); opacity: 1; } to { transform: scale(1); opacity: 0; } }
+.intro-in { position: relative; display: grid; justify-items: center; gap: 18px; padding: 24px; text-align: center; width: min(92vw, 760px); }
+.intro-bag { width: 92px; height: 92px; border-radius: 28px; background: var(--white); color: var(--red); display: grid; place-items: center; box-shadow: 0 20px 50px rgba(80,0,8,.35); animation: bagIn .8s var(--spring) .1s both, bagBob 1.6s ease-in-out 1s infinite; }
+@keyframes bagIn { from { transform: scale(0) rotate(-25deg); } to { transform: none; } }
+@keyframes bagBob { 50% { transform: translateY(-6px) rotate(-3deg); } }
+.intro-pre { font: 600 clamp(14px, 1.8vw, 17px)/1.4 var(--font); max-width: 34ch; min-height: 1.4em; }
+.intro-pre .pc { opacity: 0; animation: pcIn .05s linear forwards; }
+@keyframes pcIn { to { opacity: 1; } }
+.intro-pre .caret { display: inline-block; width: 2px; height: 1.05em; margin-left: 3px; vertical-align: -0.15em; background: var(--white); animation: blink .7s step-end infinite; }
+.intro-kicker { font: 700 13px/1 var(--mono); letter-spacing: .2em; text-transform: uppercase; animation: fadeUp .6s var(--ease) 1.55s both; }
+.intro-name { font-size: clamp(44px, 9vw, 104px); font-weight: 800; letter-spacing: -0.05em; line-height: .95; display: flex; flex-wrap: wrap; justify-content: center; gap: 0 .25em; }
+.intro-name .wd { display: inline-flex; overflow: hidden; padding-bottom: .06em; }
+.intro-name .ch { display: inline-block; animation: chUp .7s var(--ease) both; }
+@keyframes chUp { from { transform: translateY(110%) rotate(8deg); } to { transform: none; } }
+.intro-sub { font-size: clamp(16px, 2.2vw, 20px); font-weight: 600; opacity: .92; animation: fadeUp .6s var(--ease) 2.35s both; }
+.intro-track { position: relative; width: min(100%, 460px); height: 8px; border-radius: 8px; background: rgba(255,255,255,.25); margin-top: 22px; animation: fadeUp .5s var(--ease) 2.4s both; }
+.intro-track i { position: absolute; inset: 0; border-radius: 8px; background: var(--white); transform-origin: 0 50%; animation: fillX 1.3s cubic-bezier(.65,0,.35,1) 2.5s both; }
+@keyframes fillX { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.intro-moto { position: absolute; top: -36px; left: 0; width: 48px; height: 33px; color: var(--white); animation: ride 1.3s cubic-bezier(.65,0,.35,1) 2.5s both; }
+@keyframes ride { from { left: -4%; } to { left: calc(100% - 42px); } }
+.intro-steps { display: flex; gap: 22px; font-size: 13px; font-weight: 700; flex-wrap: wrap; justify-content: center; }
+.intro-steps span { opacity: .35; display: inline-flex; gap: 6px; align-items: center; }
+.intro-steps span::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+.intro-steps span:nth-child(1) { animation: stepOn .3s 2.55s forwards; }
+.intro-steps span:nth-child(2) { animation: stepOn .3s 3.1s forwards; }
+.intro-steps span:nth-child(3) { animation: stepOn .3s 3.7s forwards; }
+@keyframes stepOn { to { opacity: 1; } }
+.intro-skip { position: absolute; right: 20px; bottom: 20px; font: 700 13px var(--font); color: var(--white); background: rgba(255,255,255,.16); border: 0; padding: 10px 16px; border-radius: 999px; cursor: pointer; }
+.intro-skip:hover { background: rgba(255,255,255,.28); }
+.intro-on .hero .w > span, .intro-on .fade-in, .intro-on .combo-wrap, .intro-on .combo .opt, .intro-on .stage-photo img, .intro-on .selo, .intro-on .combo-items li, .intro-on .hero .ul::after { animation-play-state: paused !important; }
+
+/* ============ BARRA, HEADER ============ */
+.progress { position: fixed; top: env(safe-area-inset-top, 0px); left: 0; height: 3px; width: 100%; background: var(--red); transform-origin: 0 50%; transform: scaleX(0); z-index: 60; }
+header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: transparent; transition: background .3s var(--ease), box-shadow .3s var(--ease); }
+header.scrolled { background: rgba(255,255,255,.93); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--gray-100), 0 6px 20px rgba(0,0,0,.05); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; color: var(--ink); letter-spacing: -0.02em; }
+.mono { width: 40px; height: 40px; border-radius: 13px; background: var(--red); color: var(--white); display: grid; place-items: center; font-weight: 800; font-size: 16px; letter-spacing: -0.05em; transition: transform .4s var(--spring); }
+.brand:hover .mono { transform: rotate(-10deg) scale(1.08); }
+@media (max-width: 560px) { .brand-t { display: none; } }
+.nav ul { display: flex; gap: 2px; list-style: none; margin: 0; padding: 0; }
+.nav ul a { position: relative; text-decoration: none; font-weight: 600; font-size: 15px; color: var(--muted); padding: 8px 12px; border-radius: 999px; transition: color .2s; }
+.nav ul a::after { content: ""; position: absolute; left: 12px; right: 12px; bottom: 3px; height: 2px; border-radius: 2px; background: var(--red); transform: scaleX(0); transition: transform .3s var(--ease); }
+.nav ul a:hover, .nav ul a.active { color: var(--ink); }
+.nav ul a:hover::after, .nav ul a.active::after { transform: scaleX(1); }
+@media (max-width: 1080px) { .nav ul { display: none; } }
+.nav-cta { display: flex; gap: 8px; align-items: center; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font: 700 15px/1 var(--font); text-decoration: none; padding: 15px 22px; border-radius: 12px; border: 0; cursor: pointer; transition: transform .25s var(--ease), background .2s, box-shadow .25s var(--ease); }
+.btn svg { transition: transform .25s var(--ease); }
+.btn:hover svg { transform: translateX(3px); }
+.btn-red { background: var(--red); color: var(--white); box-shadow: 0 6px 16px rgba(234,29,44,.25); }
+.btn-red:hover { background: var(--red-dark); transform: translateY(-2px); box-shadow: 0 10px 22px rgba(234,29,44,.32); }
+.btn-soft { background: var(--red-soft); color: var(--red-dark); }
+.btn-soft:hover { transform: translateY(-2px); }
+.btn-line { background: var(--white); color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--gray-200); }
+.btn-line:hover { transform: translateY(-2px); box-shadow: inset 0 0 0 1.5px var(--ink); }
+.btn-line:hover svg { transform: none; }
+.btn-sm { padding: 11px 16px; font-size: 14px; }
+.btn-icon { padding: 11px; }
+
+/* ============ HERO ============ */
+.hero { padding-block: 36px 110px; }
+.hero-bg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.blob { position: absolute; border-radius: 50%; background: var(--red-soft); }
+.blob.b1 { width: 420px; height: 420px; right: -180px; top: -160px; animation: float 14s ease-in-out infinite; }
+.blob.b2 { width: 180px; height: 180px; left: -70px; top: 44%; background: var(--red); opacity: .05; animation: float 10s ease-in-out infinite reverse; }
+@keyframes float { 50% { transform: translate(-20px, 24px) scale(1.04); } }
+.hero-center { display: grid; justify-items: center; text-align: center; }
+.hero-center > * { min-width: 0; }
+.loc { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; font-size: 14px; background: var(--white); box-shadow: var(--shadow-sm); padding: 8px 14px 8px 10px; border-radius: 999px; color: var(--text); }
+.loc .dot { position: relative; width: 9px; height: 9px; border-radius: 50%; background: var(--green); }
+.loc .dot::after { content: ""; position: absolute; inset: -5px; border-radius: 50%; border: 2px solid var(--green); opacity: 0; animation: ping 2s ease-out infinite; }
+@media (max-width: 480px) { .loc { font-size: clamp(11.5px, 3.3vw, 14px); gap: 8px; padding: 7px 12px 7px 9px; } }
+@keyframes ping { 0% { transform: scale(.5); opacity: .8; } 100% { transform: scale(1.6); opacity: 0; } }
+.hero h1 { font-size: clamp(44px, 7vw, 88px); margin-top: 20px; letter-spacing: -0.045em; line-height: 1.0; }
+.hero h1 .w { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .08em; margin-bottom: -.08em; }
+.hero h1 .w > span { display: inline-block; animation: rise .9s var(--ease) both; }
+.hero h1 .red { color: var(--red); }
+.hero h1 .ul { position: relative; }
+.hero h1 .ul::after { content: ""; position: absolute; left: 0; right: 0; bottom: .02em; height: .12em; background: var(--red); border-radius: 4px; opacity: .18; transform-origin: 0 50%; animation: draw .8s 1.1s var(--ease) both; }
+@keyframes rise { from { transform: translateY(105%); } to { transform: none; } }
+@keyframes draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.hero .lead { font-size: clamp(17px, 2vw, 20px); color: var(--muted); margin: 20px auto 0; max-width: 58ch; }
+.hero .lead b { color: var(--ink); }
+.hero .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; justify-content: center; }
+.fade-in { animation: fadeUp .9s var(--ease) both; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes blink { 50% { opacity: .3; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Palco da foto: foto solta, "AI Builder" em contorno atrás e selos 3D em volta, em todas as telas. */
+.combo-wrap { position: relative; max-width: 1100px; margin: 0 auto; animation: fadeUp 1s .35s var(--ease) both; }
+.combo { position: relative; }
+.combo-stage { position: relative; height: clamp(520px, 46vw, 660px); perspective: 1300px; }
+.stage-dots { display: none; }
+.stage-word { display: block; position: absolute; left: 50%; top: 4%; translate: -50% 0; z-index: 1; transform: translate3d(calc(var(--mx, 0) * -22px + var(--sy, 0) * -120px), 0, 0); font: 800 clamp(120px, 17vw, 226px)/1 var(--font); letter-spacing: -0.06em; color: transparent; -webkit-text-stroke: 2px #C4C4C4; white-space: nowrap; pointer-events: none; user-select: none; }
+.stage-halo { display: block; z-index: 0; position: absolute; left: 50%; bottom: -70px; translate: -50% 0; height: min(660px, calc(100% + 30px)); aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 50% 42%, var(--gray-100) 0 50%, rgba(237,237,237,0) 70%); }
+.orbit { display: block; z-index: 1; position: absolute; left: 50%; bottom: 6%; translate: -50% 0; width: min(1020px, 98%); height: 320px; border: 2px dashed var(--gray-200); border-radius: 50%; transform: rotateX(74deg); }
+.orbit i { position: absolute; inset: -2px; border-radius: 50%; animation: spin 16s linear infinite; }
+.orbit i::after { content: ""; position: absolute; left: 50%; top: -11px; width: 22px; height: 22px; margin-left: -11px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 8px var(--red-soft); }
+.stage-photo { position: absolute; z-index: 2; left: 50%; bottom: 0; height: 104%; translate: -50% 0; transform: translate3d(calc(var(--mx, 0) * -12px), calc(var(--my, 0) * -6px), 0); }
+.stage-photo img { display: block; height: 100%; width: auto; max-width: none; filter: drop-shadow(0 34px 44px rgba(0,0,0,.22)); animation: photoUp 1.1s .45s var(--ease) both; }
+@keyframes photoUp { from { opacity: 0; translate: 0 12%; } }
+.selo { position: absolute; z-index: 3; animation: seloPop .7s var(--spring) both; animation-delay: var(--in, 1.1s); transform-style: preserve-3d; transform: translate3d(calc(var(--mx, 0) * var(--d, 20) * 1px), calc((var(--my, 0) - var(--sy, 0) * 2.4) * var(--d, 20) * 1px), 0); }
+@keyframes seloPop { from { opacity: 0; scale: .4; } }
+.selo-in { display: inline-flex; align-items: center; gap: 7px; font-weight: 800; white-space: nowrap; transform: rotateX(calc(var(--rx, 0deg) + var(--my, 0) * -10deg)) rotateY(calc(var(--ry, 0deg) + var(--mx, 0) * 14deg)) rotateZ(var(--rz, 0deg)); animation: floaty var(--t, 6s) ease-in-out var(--dl, 0s) infinite; }
+@keyframes floaty { 50% { translate: 0 var(--fl, -14px); } }
+.pill { background: var(--white); color: var(--ink); font-size: 15.5px; padding: 12px 20px; border-radius: 999px; box-shadow: 0 1px 0 #ECECEC, 0 2px 0 #E4E4E4, 0 3px 0 #DCDCDC, 0 4px 0 #D4D4D4, 0 5px 0 #CCCCCC, 0 6px 0 #C6C6C6, 0 24px 34px rgba(0,0,0,.2); }
+.pill .dotr { width: 9px; height: 9px; border-radius: 50%; background: var(--red); }
+.pill svg { color: var(--green); }
+.pill.red { background: var(--red); color: var(--white); box-shadow: 0 1px 0 #D51A28, 0 2px 0 #C91825, 0 3px 0 #BD1522, 0 4px 0 #B1131F, 0 5px 0 #A5101C, 0 6px 0 #9A0E19, 0 24px 34px rgba(160,10,25,.4); }
+.tile { flex-direction: column; align-items: flex-start; gap: 3px; background: var(--white); color: var(--red); font-size: 34px; line-height: 1.05; letter-spacing: -0.02em; padding: 16px 20px 14px; border-radius: 24px; box-shadow: 0 1px 0 #ECECEC, 0 2px 0 #E4E4E4, 0 3px 0 #DCDCDC, 0 4px 0 #D4D4D4, 0 5px 0 #CCCCCC, 0 6px 0 #C6C6C6, 0 26px 36px rgba(0,0,0,.22); }
+.tile small { font-size: 13px; font-weight: 700; color: var(--muted); letter-spacing: 0; }
+.seal { width: 148px; height: 148px; border-radius: 50%; flex-direction: column; justify-content: center; gap: 2px; background: var(--red); color: var(--white); font-size: 30px; letter-spacing: -0.03em; line-height: 1; box-shadow: inset 0 0 0 6px var(--red), inset 0 0 0 8px rgba(255,255,255,.55), 0 1px 0 #D51A28, 0 2px 0 #C91825, 0 3px 0 #BD1522, 0 4px 0 #B1131F, 0 5px 0 #A5101C, 0 6px 0 #9A0E19, 0 26px 36px rgba(160,10,25,.4); }
+.seal small { font-size: 12px; font-weight: 700; letter-spacing: 0; opacity: .92; }
+.s1 { left: 0; top: 24%; --ry: 24deg; --rx: 6deg; --rz: -7deg; --d: 26; --t: 6.5s; --in: 1.1s; }
+.s2 { right: 5%; top: 6%; --ry: -26deg; --rx: 4deg; --rz: 6deg; --d: 36; --t: 5.6s; --dl: -1.5s; --in: 1.25s; }
+.s3 { right: 0; top: 52%; --ry: -20deg; --rz: -5deg; --d: 18; --t: 7s; --dl: -3s; --in: 1.4s; }
+.s4 { left: 5%; top: 54%; --ry: 22deg; --rz: -10deg; --d: 14; --t: 7.6s; --dl: -2s; --in: 1.55s; }
+.s5 { right: 13%; top: 30%; --ry: -16deg; --rz: 3deg; --d: 30; --t: 6.2s; --dl: -4s; --in: 1.7s; }
+.combo-body { position: relative; z-index: 4; background: var(--white); padding: clamp(22px, 4vw, 40px); display: grid; gap: 26px; margin-top: -74px; border-radius: 34px; box-shadow: 0 40px 80px rgba(120,0,10,.14), 0 2px 6px rgba(0,0,0,.05); }
+
+/* Tablet e celular: o mesmo palco, em escala menor. */
+@media (max-width: 899px) {
+  .combo-wrap { margin-top: 30px; }
+  .combo-stage { height: clamp(320px, 74vw, 560px); perspective: 1000px; }
+  .stage-word { top: 0; font-size: 22.5vw; -webkit-text-stroke-width: 1.5px; transform: translate3d(calc(var(--sy, 0) * -70px), 0, 0); }
+  .stage-halo { bottom: -40px; height: min(600px, calc(100% + 10px)); }
+  .orbit { width: 100%; height: 46%; bottom: 5%; }
+  .selo-in { --fl: -9px; }
+  .pill { font-size: 14px; padding: 10px 16px; }
+  .tile { font-size: 28px; padding: 13px 16px 11px; border-radius: 20px; }
+  .tile small { font-size: 12px; }
+  .seal { width: 122px; height: 122px; font-size: 25px; }
+  .seal small { font-size: 10.5px; }
+  .s1 { --d: 14; } .s2 { --d: 18; } .s3 { --d: 10; } .s4 { left: 3%; --d: 8; } .s5 { right: 0; top: 29%; --d: 14; }
+  .combo-body { margin-top: -54px; border-radius: 30px; }
+}
+@media (max-width: 599px) {
+  .combo-wrap { margin-top: 26px; }
+  .combo-stage { height: clamp(300px, 88vw, 520px); }
+  .stage-halo { bottom: -30px; height: calc(100% - 6px); }
+  .stage-photo { height: 100%; }
+  .orbit { border-width: 1.5px; }
+  .orbit i::after { top: -7px; width: 14px; height: 14px; margin-left: -7px; box-shadow: 0 0 0 5px var(--red-soft); }
+  .selo-in { --fl: -6px; }
+  .pill { font-size: 12px; padding: 8px 12px; gap: 6px; box-shadow: 0 1px 0 #E8E8E8, 0 2px 0 #DADADA, 0 3px 0 #CCCCCC, 0 14px 22px rgba(0,0,0,.18); }
+  .pill .dotr { width: 7px; height: 7px; }
+  .pill.red { box-shadow: 0 1px 0 #CF1926, 0 2px 0 #B91420, 0 3px 0 #A3101B, 0 14px 22px rgba(160,10,25,.35); }
+  .tile { font-size: 21px; padding: 10px 13px 9px; border-radius: 16px; box-shadow: 0 1px 0 #E8E8E8, 0 2px 0 #DADADA, 0 3px 0 #CCCCCC, 0 16px 24px rgba(0,0,0,.2); }
+  .tile small { font-size: 10.5px; }
+  .seal { width: 96px; height: 96px; font-size: 20px; box-shadow: inset 0 0 0 4px var(--red), inset 0 0 0 5.5px rgba(255,255,255,.55), 0 1px 0 #CF1926, 0 2px 0 #B91420, 0 3px 0 #A3101B, 0 16px 24px rgba(160,10,25,.35); }
+  .seal small { font-size: 9px; }
+  .s1 { left: 0; top: 67%; }
+  .s2 { right: 0; top: 8%; }
+  .s3 { right: 0; top: 42%; }
+  .s4 { left: 0; top: 19%; }
+  .s5 { display: none; }
+  .combo-body { margin-top: -40px; border-radius: 28px; }
+}
+.combo-head { text-align: center; display: grid; gap: 8px; justify-items: center; }
+.combo-head small { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; color: var(--red); }
+.combo-head h2 { font-size: clamp(30px, 4.2vw, 46px); }
+.combo-head p { color: var(--muted); font-size: 16.5px; max-width: 60ch; }
+.combo-items { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+@media (max-width: 900px) { .combo-items { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .combo-items { grid-template-columns: 1fr; } }
+.combo-items li { background: var(--gray-50); border-radius: 18px; padding: 16px; display: grid; gap: 6px; align-content: start; text-align: left; transition: transform .35s var(--spring), background .3s; animation: addItem .6s var(--ease) both; }
+.combo-items li:nth-child(1) { animation-delay: .9s; } .combo-items li:nth-child(2) { animation-delay: 1s; } .combo-items li:nth-child(3) { animation-delay: 1.1s; } .combo-items li:nth-child(4) { animation-delay: 1.2s; } .combo-items li:nth-child(5) { animation-delay: 1.3s; }
+.combo-items li:hover { transform: translateY(-4px); background: var(--red-soft); }
+.combo-items .ci { width: 36px; height: 36px; border-radius: 11px; background: var(--red); color: var(--white); display: grid; place-items: center; margin-bottom: 4px; }
+.combo-items b { font-size: 17px; color: var(--ink); letter-spacing: -0.02em; }
+.combo-items li > span:last-child { font-size: 13.5px; color: var(--muted); line-height: 1.4; }
+.combo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start; }
+.combo-grid > * { min-width: 0; display: grid; gap: 14px; }
+@media (max-width: 760px) { .combo-grid { grid-template-columns: 1fr; } }
+.combo-foot { background: var(--gray-50); border-radius: 16px; padding: 14px 16px; display: grid; gap: 6px; font-size: 14px; color: var(--muted); }
+.combo-foot b { color: var(--ink); }
+.combo-foot .row { display: flex; gap: 8px; align-items: center; }
+.combo-foot .row svg { color: var(--red); flex: none; }
+.opt-group { border: 0; margin: 0; padding: 0; min-width: 0; display: grid; gap: 2px; }
+.opt-title { display: flex; justify-content: space-between; align-items: center; width: 100%; background: var(--gray-50); border-radius: 10px; padding: 8px 12px; margin-bottom: 4px; font-weight: 800; color: var(--ink); font-size: 14px; }
+.opt-title small { font-size: 10.5px; font-weight: 800; color: var(--white); background: var(--ink); padding: 3px 8px; border-radius: 6px; text-transform: uppercase; letter-spacing: .05em; }
+.opt { display: grid; grid-template-columns: 1fr auto 22px; gap: 10px; align-items: center; padding: 9px 4px 9px 12px; border-bottom: 1px dashed var(--gray-100); cursor: pointer; font-size: 15px; font-weight: 600; color: var(--ink); animation: addItem .6s var(--ease) both; }
+.opt:nth-of-type(1) { animation-delay: .8s; } .opt:nth-of-type(2) { animation-delay: .95s; } .opt:nth-of-type(3) { animation-delay: 1.1s; } .opt:nth-of-type(4) { animation-delay: 1.25s; }
+@keyframes addItem { from { opacity: 0; transform: translateX(24px); } to { opacity: 1; transform: none; } }
+.opt input { order: 3; width: 20px; height: 20px; margin: 0; accent-color: var(--red); cursor: pointer; }
+.opt em { font-style: normal; font-size: 12px; font-weight: 800; color: var(--green); }
+.opt.shake { animation: shake .4s ease; }
+@keyframes shake { 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+.removed { display: flex; flex-wrap: wrap; gap: 6px; padding: 4px 0 0 12px; }
+.removed s { font-size: 13.5px; font-weight: 600; color: var(--muted); background: var(--gray-50); padding: 4px 10px; border-radius: 999px; text-decoration-color: var(--red); text-decoration-thickness: 2px; }
+.obs { border: 1.5px dashed var(--gray-200); border-radius: 12px; padding: 10px 12px; }
+.obs small { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.obs p { font-size: 14.5px; font-weight: 600; color: var(--ink); margin-top: 2px; }
+.toast { font-size: 13.5px; font-weight: 700; color: var(--red-dark); background: var(--red-soft); border-radius: 10px; padding: 0 12px; max-height: 0; overflow: hidden; opacity: 0; transition: all .35s var(--ease); }
+.toast.show { max-height: 60px; padding: 9px 12px; opacity: 1; }
+.buy { display: flex; gap: 12px; align-items: center; margin-top: 10px; }
+.buy .btn { flex: 1; }
+.stepper { display: flex; align-items: center; gap: 4px; border: 1.5px solid var(--gray-100); border-radius: 12px; padding: 4px; background: var(--white); }
+.stepper button { width: 34px; height: 34px; border: 0; border-radius: 9px; background: transparent; color: var(--red); font: 800 20px/1 var(--font); cursor: pointer; transition: background .2s; }
+.stepper button:hover { background: var(--red-soft); }
+.stepper span { min-width: 20px; text-align: center; font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* Faixa vermelha: inclina mais conforme a velocidade do scroll */
+.ribbon { position: relative; z-index: 2; margin-block: -40px; overflow: hidden; padding-block: 34px; }
+.ribbon-in { background: var(--red); transform: rotate(-2deg) skewX(calc(var(--vel, 0) * -1deg)); margin-inline: -4%; padding-block: 18px; box-shadow: 0 12px 30px rgba(234,29,44,.25); transition: transform .3s var(--ease); }
+.marquee { display: flex; width: max-content; animation: marquee 34s linear infinite; }
+.marquee span { display: inline-flex; align-items: center; gap: 22px; padding-right: 22px; color: var(--white); font-weight: 800; font-size: clamp(18px, 2.4vw, 26px); letter-spacing: -0.02em; white-space: nowrap; }
+.marquee span::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,.55); }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* ============ COMANDA (requisitos da vaga conferidos com o scroll) ============ */
+.check-sec { background: var(--gray-50); padding-top: 130px; }
+.check-grid { display: grid; grid-template-columns: 310px 1fr; gap: 36px; align-items: start; }
+.check-grid > * { min-width: 0; }
+.comanda { position: sticky; top: 96px; }
+@media (max-width: 900px) { .check-grid { grid-template-columns: 1fr; } .comanda { position: static; } }
+.comanda-card { position: relative; background: var(--white); padding: 26px 24px 30px; margin-block: 10px; box-shadow: var(--shadow-lg); text-align: center; display: grid; gap: 14px; justify-items: center; }
+.comanda-card::before, .comanda-card::after { content: ""; position: absolute; left: 0; right: 0; height: 10px; }
+.comanda-card::before { top: -10px; background: radial-gradient(circle at 8px 0, transparent 7px, var(--white) 7.5px) 0 0 / 16px 10px repeat-x; }
+.comanda-card::after { bottom: -10px; background: radial-gradient(circle at 8px 10px, transparent 7px, var(--white) 7.5px) 0 0 / 16px 10px repeat-x; }
+.comanda-k { font: 700 12px var(--mono); color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+.ring { position: relative; width: 168px; height: 168px; }
+.ring svg { display: block; transform: rotate(-90deg); }
+.ring .bg { fill: none; stroke: var(--gray-100); stroke-width: 12; }
+.ring .fg { fill: none; stroke: var(--green); stroke-width: 12; stroke-linecap: round; stroke-dasharray: 440; stroke-dashoffset: calc(440 * (1 - var(--rp, 1))); transition: stroke-dashoffset .5s var(--ease); }
+.ring .n { position: absolute; inset: 0; display: grid; place-items: center; align-content: center; }
+.ring b { font-size: 56px; font-weight: 800; color: var(--ink); line-height: 1; font-variant-numeric: tabular-nums; letter-spacing: -0.04em; }
+.ring span { font-size: 13px; color: var(--muted); font-weight: 700; }
+.comanda-card > p { font-size: 14.5px; font-weight: 700; color: var(--ink); }
+.cbars { width: 100%; display: grid; gap: 10px; text-align: left; }
+.cbar { display: grid; gap: 5px; font-size: 13px; font-weight: 700; color: var(--text); }
+.cbar i { position: relative; display: block; height: 6px; border-radius: 6px; background: var(--gray-100); overflow: hidden; }
+.cbar i::after { content: ""; position: absolute; inset: 0; border-radius: 6px; background: var(--red); transform-origin: 0 50%; transform: scaleX(var(--bp, 1)); transition: transform .5s var(--ease); }
+.stamp { font: 700 14px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--green); border: 3px solid var(--green); border-radius: 10px; padding: 8px 14px; transform: rotate(-6deg); margin-top: 4px; }
+.js .comanda:not(.done) .stamp { opacity: 0; }
+.js .comanda.done .stamp { animation: stampIn .5s var(--spring) both; }
+@keyframes stampIn { from { opacity: 0; transform: rotate(-16deg) scale(2.4); } to { opacity: 1; transform: rotate(-6deg) scale(1); } }
+.check-list { display: grid; gap: 12px; }
+.check-group { font-size: 21px; display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; margin-top: 8px; }
+.check-group:not(:first-child) { margin-top: 26px; }
+.check-group small { font: 700 12px var(--mono); color: var(--muted); letter-spacing: .04em; }
+.crow { display: grid; grid-template-columns: 34px 1fr; gap: 14px; background: var(--white); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); transition: opacity .5s var(--ease), transform .5s var(--ease), box-shadow .5s var(--ease); }
+.crow > * { min-width: 0; }
+.crow .ck { width: 34px; height: 34px; border-radius: 50%; background: var(--green); color: var(--white); display: grid; place-items: center; transition: background .4s, transform .5s var(--spring); }
+.js .crow:not(.on) { opacity: .5; transform: translateX(14px); }
+.js .crow:not(.on) .ck { background: var(--gray-200); transform: scale(.78); }
+.crow.on { box-shadow: 0 1px 2px rgba(0,0,0,.05), 0 10px 26px rgba(0,0,0,.07); }
+.crow b { display: block; color: var(--ink); font-size: 16px; line-height: 1.35; }
+.crow p { color: var(--muted); font-size: 14.5px; margin-top: 3px; line-height: 1.5; }
+.chips-l { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 9px; }
+.chips-l a { font-size: 12.5px; font-weight: 800; color: var(--red); background: var(--red-soft); padding: 4px 11px; border-radius: 999px; text-decoration: none; transition: background .2s, color .2s; }
+.chips-l a:hover { background: var(--red); color: var(--white); }
+.ficha { margin-top: 36px; background: var(--white); border-radius: 26px; padding: clamp(22px, 3.4vw, 36px); box-shadow: var(--shadow-sm); display: grid; grid-template-columns: 1.25fr 1fr; gap: 30px; align-items: start; }
+.ficha > * { min-width: 0; }
+@media (max-width: 860px) { .ficha { grid-template-columns: 1fr; } }
+.ficha h3 { font-size: 22px; display: flex; gap: 10px; align-items: center; }
+.ficha h3 .ic { width: 38px; height: 38px; border-radius: 12px; background: var(--red); color: var(--white); display: grid; place-items: center; flex: none; }
+.ficha p { font-size: 15.5px; line-height: 1.65; margin-top: 12px; }
+.ficha p b { color: var(--ink); }
+.ficha dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 9px 16px; font-size: 14.5px; }
+.ficha dt { font-weight: 800; color: var(--red); font-size: 11.5px; text-transform: uppercase; letter-spacing: .07em; padding-top: 3px; }
+.ficha dd { margin: 0; color: var(--ink); font-weight: 600; overflow-wrap: anywhere; }
+
+/* ============ CARDÁPIO (página de loja) ============ */
+.menu-sec { padding-top: 90px; }
+.store { border-radius: 28px; box-shadow: var(--shadow-lg); background: var(--white); }
+.store-cover { position: relative; height: 170px; background: linear-gradient(120deg, var(--red) 0%, var(--red-dark) 60%, var(--red-deep) 100%); overflow: hidden; border-radius: 28px 28px 0 0; }
+.store-cover::before { content: ""; position: absolute; inset: -30px; background: radial-gradient(circle, rgba(255,255,255,.16) 1.5px, transparent 2px) 0 0 / 26px 26px; animation: drift 9s linear infinite; }
+.store-cover span { position: absolute; right: 28px; bottom: 14px; font: 800 clamp(40px, 7vw, 86px)/1 var(--font); color: rgba(255,255,255,.14); letter-spacing: -0.05em; white-space: nowrap; }
+.store-info { display: grid; grid-template-columns: auto 1fr auto; gap: 18px; align-items: end; padding: 0 28px 22px; margin-top: -46px; position: relative; }
+.store-info > * { min-width: 0; }
+.store-info > div { margin-top: 56px; }
+.store-logo { width: 104px; height: 104px; border-radius: 50%; object-fit: cover; border: 5px solid var(--white); box-shadow: var(--shadow-lg); background: var(--white); }
+.store-info h2 { font-size: clamp(24px, 3vw, 32px); }
+.store-meta { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 6px; font-size: 14px; color: var(--muted); font-weight: 600; }
+.store-meta .free { color: var(--green); }
+.store-open { font-size: 13px; font-weight: 800; color: var(--green); background: var(--green-soft); padding: 6px 12px; border-radius: 999px; white-space: nowrap; display: inline-flex; gap: 6px; align-items: center; }
+.store-open::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: blink 1.6s infinite; }
+@media (max-width: 720px) { .store-info { grid-template-columns: 1fr; align-items: start; } .store-info > div { margin-top: 0; } .store-open { justify-self: start; } }
+.cats { position: sticky; top: 68px; z-index: 5; display: flex; gap: 8px; overflow-x: auto; padding: 12px 28px; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-top: 1px solid var(--gray-100); border-bottom: 1px solid var(--gray-100); scrollbar-width: none; }
+.cats a { flex: none; text-decoration: none; font-weight: 700; font-size: 14px; color: var(--text); padding: 9px 15px; border-radius: 999px; background: var(--gray-50); transition: all .25s var(--ease); }
+.cats a:hover, .cats a.on { background: var(--red); color: var(--white); }
+.menu-body { padding: 8px 28px 28px; }
+.menu-cat { scroll-margin-top: 140px; }
+.menu-cat h3 { font-size: 22px; margin: 26px 0 14px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.menu-cat h3 small { font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: 0; }
+.items { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; perspective: 1200px; }
+@media (max-width: 820px) { .items { grid-template-columns: 1fr; } .menu-body, .cats, .store-info { padding-inline: 16px; } }
+.item { position: relative; display: grid; grid-template-columns: 1fr 132px; gap: 16px; align-items: start; text-decoration: none; padding: 16px; border: 1px solid var(--gray-100); border-radius: 18px; background: var(--white); transition: transform .3s var(--ease), box-shadow .4s var(--ease), border-color .3s; }
+.item:hover { box-shadow: var(--shadow-lg); border-color: transparent; }
+.item > * { min-width: 0; }
+.item h4 { font-size: 17.5px; letter-spacing: -0.02em; }
+.item p { color: var(--muted); font-size: 14px; line-height: 1.5; margin-top: 6px; }
+.item .price { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin-top: 10px; }
+.item .price b { color: var(--green); font-size: 14.5px; }
+.item .plus { position: absolute; right: 10px; bottom: 10px; width: 34px; height: 34px; border-radius: 50%; background: var(--red); color: var(--white); display: grid; place-items: center; box-shadow: 0 6px 14px rgba(234,29,44,.3); transform: scale(0); transition: transform .35s var(--spring); }
+.item:hover .plus, .item:focus-visible .plus { transform: scale(1); }
+.tag { font-size: 11.5px; font-weight: 800; padding: 3px 9px; border-radius: 6px; white-space: nowrap; }
+.tag.live { color: var(--green); background: var(--green-soft); }
+.tag.wip { color: var(--amber); background: var(--amber-soft); }
+.tag.red { color: var(--white); background: var(--red); }
+.item-img { border-radius: 12px; overflow: hidden; background: var(--gray-50); aspect-ratio: 1; }
+.item-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); display: block; }
+.item:hover .item-img img { transform: scale(1.08); }
+@media (max-width: 420px) { .item { grid-template-columns: 1fr 92px; } }
+
+/* ============ CASOS ============ */
+.cases { background: var(--white); padding-top: 50px; }
+.case { border-radius: 30px; background: var(--gray-50); padding: clamp(22px, 4vw, 46px); display: grid; gap: 30px; scroll-margin-top: 90px; position: relative; overflow: hidden; }
+.case + .case { margin-top: 44px; }
+.case > * { min-width: 0; position: relative; }
+.case > .case-num { position: absolute; right: clamp(16px, 3vw, 40px); top: 4px; font: 800 clamp(80px, 12vw, 150px)/1 var(--font); color: rgba(234,29,44,.07); letter-spacing: -0.06em; pointer-events: none; transform: translate3d(0, calc(var(--gx, 0) * 60px), 0); }
+.case-kicker { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13px; font-weight: 700; color: var(--muted); }
+.case-kicker .num { background: var(--red); color: var(--white); border-radius: 8px; padding: 2px 9px; font-weight: 800; }
+.status { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+.status.live { color: var(--green); background: var(--green-soft); }
+.status.live::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; animation: blink 1.6s ease-in-out infinite; }
+.status.wip { color: var(--amber); background: var(--amber-soft); }
+.case h3 { font-size: clamp(28px, 3.6vw, 44px); margin-top: 10px; max-width: 24ch; }
+.case-sub { color: var(--muted); font-size: 17.5px; margin-top: 10px; max-width: 70ch; }
+.case-sub b { color: var(--ink); }
+.links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.link-pill { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 700; font-size: 14px; color: var(--red); background: var(--white); padding: 9px 14px; border-radius: 999px; box-shadow: var(--shadow-sm); transition: transform .25s var(--ease), box-shadow .25s; }
+.link-pill:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.authority { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; background: var(--white); border-radius: 18px; padding: 16px 20px; box-shadow: var(--shadow-sm); }
+.authority .seal-ic { width: 54px; height: 54px; border-radius: 50%; background: var(--red); color: var(--white); display: grid; place-items: center; }
+.authority b { color: var(--ink); font-size: 16px; display: block; }
+.authority span { color: var(--muted); font-size: 14.5px; }
+.case-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.case-cols.two { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 900px) { .case-cols, .case-cols.two { grid-template-columns: 1fr; } }
+.cbox { background: var(--white); border-radius: 18px; padding: 20px 22px; box-shadow: var(--shadow-sm); min-width: 0; }
+.cbox small { display: block; font-size: 11.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--red); margin-bottom: 8px; }
+.cbox p, .cbox li { font-size: 15px; color: var(--text); line-height: 1.55; }
+.cbox ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.cbox li::marker { color: var(--red); }
+.cbox b { color: var(--ink); }
+.kpis-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+@media (max-width: 900px) { .kpis-row { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 380px) { .kpis-row { grid-template-columns: 1fr; } }
+.kpi { background: var(--white); border-radius: 18px; padding: 18px 20px; box-shadow: var(--shadow-sm); min-width: 0; transition: transform .35s var(--spring); }
+.kpi:hover { transform: translateY(-4px); }
+.kpi b { display: block; font-size: clamp(26px, 3vw, 38px); font-weight: 800; color: var(--red); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.kpi span { display: block; font-size: 13.5px; color: var(--muted); margin-top: 4px; line-height: 1.4; }
+.block-title { font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--ink); display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.block-title::after { content: ""; flex: 1; height: 1px; background: var(--gray-200); }
+.note { margin-top: 12px; font-size: 13px; color: var(--muted); }
+
+/* Fluxo: as etapas acendem uma a uma conforme o scroll, como o rastreio de um pedido */
+.canvas { position: relative; background: radial-gradient(circle, #D6D6D6 1px, transparent 1.5px) 0 0 / 18px 18px, var(--white); border-radius: 20px; box-shadow: var(--shadow-sm); padding: 22px; overflow-x: auto; }
+.canvas-bar { position: sticky; left: 0; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; font-size: 13px; font-weight: 700; color: var(--muted); }
+.canvas-bar b { color: var(--ink); font-size: 14px; }
+.canvas-bar .on { display: inline-flex; align-items: center; gap: 6px; color: var(--green); background: var(--green-soft); padding: 3px 10px; border-radius: 999px; }
+.canvas-bar .on::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: blink 1.6s infinite; }
+.flow { list-style: none; margin: 0; padding: 0; display: flex; align-items: stretch; gap: 34px; min-width: max-content; }
+.flow > li { position: relative; width: 150px; background: var(--white); border: 1.5px solid var(--gray-100); border-radius: 14px; padding: 12px; display: grid; gap: 6px; align-content: start; box-shadow: var(--shadow-sm); transition: border-color .4s, box-shadow .4s, transform .5s var(--spring); }
+.flow > li:not(:last-child)::after { content: ""; position: absolute; right: -35px; top: 30px; width: 34px; height: 2px; background: linear-gradient(90deg, var(--gray-200) 50%, transparent 50%) 0 0 / 8px 2px; }
+.flow > li.lit:not(:last-child)::after { background-image: linear-gradient(90deg, var(--red) 50%, transparent 50%); animation: dash 1s linear infinite; }
+@keyframes dash { to { background-position: 8px 0; } }
+.nic { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; background: var(--gray-50); color: var(--muted); transition: background .4s, color .4s; }
+.flow > li.lit { border-color: var(--red); box-shadow: 0 10px 22px rgba(234,29,44,.14); transform: translateY(-3px); }
+.flow > li.lit .nic { background: var(--red); color: var(--white); }
+.flow > li.lit .nic.ok { background: var(--green); }
+.no-io .flow > li .nic { background: var(--red-soft); color: var(--red); }
+.flow b { font-size: 13.5px; color: var(--ink); line-height: 1.25; }
+.flow li > span:not(.nic) { font-size: 12px; color: var(--muted); line-height: 1.35; }
+.flow .mdl { font: 700 10.5px var(--mono); color: var(--red-dark); }
+
+/* Orquestra de agentes: cada agente "acende" na sua vez */
+.orch { display: grid; grid-template-columns: 230px 1fr; gap: 18px; align-items: stretch; }
+@media (max-width: 820px) { .orch { grid-template-columns: 1fr; } }
+.conductor { background: var(--red); color: var(--white); border-radius: 18px; padding: 20px; display: grid; gap: 8px; align-content: center; position: relative; overflow: hidden; }
+.conductor::after { content: ""; position: absolute; width: 180px; height: 180px; border-radius: 50%; border: 2px solid rgba(255,255,255,.25); right: -60px; bottom: -60px; animation: ring 3s ease-out infinite; }
+.conductor b { font-size: 18px; color: var(--white); }
+.conductor span { font-size: 13.5px; opacity: .92; }
+.agents { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+@media (max-width: 980px) { .agents { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .agents { grid-template-columns: 1fr; } }
+.agent { position: relative; background: var(--white); border-radius: 14px; padding: 12px 14px; box-shadow: var(--shadow-sm); display: grid; gap: 4px; align-content: start; animation: agentOn calc(var(--n, 6) * 1.6s) linear infinite; animation-delay: calc(var(--i, 0) * 1.6s); }
+.agent::after { content: ""; position: absolute; right: 12px; top: 12px; width: 8px; height: 8px; border-radius: 50%; background: var(--gray-200); animation: agentDot calc(var(--n, 6) * 1.6s) linear infinite; animation-delay: calc(var(--i, 0) * 1.6s); }
+@keyframes agentOn { 0%, 20%, 100% { background: var(--white); box-shadow: var(--shadow-sm); } 2%, 15% { background: var(--red-soft); box-shadow: 0 10px 24px rgba(234,29,44,.18); } }
+@keyframes agentDot { 0%, 20%, 100% { background: var(--gray-200); } 2%, 15% { background: var(--green); } }
+.agent b { font-size: 14px; color: var(--ink); }
+.agent span { font-size: 12.5px; color: var(--muted); line-height: 1.4; }
+.agent .model { font: 700 11px var(--mono); color: var(--red-dark); }
+
+/* Telas em abas */
+.tabs { display: grid; gap: 12px; }
+.tab-bar { display: none; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.js .tab-bar { display: flex; }
+.tab { flex: none; font: 700 14px var(--font); color: var(--text); background: var(--white); border: 1.5px solid var(--gray-100); padding: 9px 15px; border-radius: 999px; cursor: pointer; transition: all .25s var(--ease); }
+.tab:hover { border-color: var(--red); color: var(--red); }
+.tab[aria-selected="true"] { background: var(--red); border-color: var(--red); color: var(--white); box-shadow: 0 6px 14px rgba(234,29,44,.22); }
+.tab-panels { display: grid; gap: 18px; }
+.js .tab-panel:not(.on) { display: none; }
+.js .tab-panel.on { animation: panelIn .5s var(--ease) both; }
+@keyframes panelIn { from { opacity: 0; transform: translateY(16px) scale(.985); } }
+.screens { display: grid; grid-template-columns: 1.4fr 1fr; gap: 18px; align-items: start; }
+@media (max-width: 900px) { .screens { grid-template-columns: 1fr !important; } }
+.screens > * { min-width: 0; }
+.browser { margin: 0; background: var(--white); border-radius: 16px; box-shadow: var(--shadow-lg); overflow: hidden; }
+.browser-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: var(--gray-50); border-bottom: 1px solid var(--gray-100); }
+.browser-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--gray-200); flex: none; }
+.browser-bar i:first-child { background: var(--red); }
+.browser-bar span { margin-left: 10px; font-size: 12px; font-weight: 700; color: var(--muted); background: var(--white); border-radius: 6px; padding: 3px 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.browser img { display: block; width: 100%; height: auto; }
+.browser figcaption { padding: 10px 14px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--gray-100); }
+
+/* Vídeo + película que corre com o scroll */
+.video-wrap { position: relative; border-radius: 22px; overflow: hidden; background: var(--ink); box-shadow: 0 30px 70px rgba(0,0,0,.25); }
+.video-wrap video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: var(--ink); }
+.film { position: relative; background: var(--red); border-radius: 18px; padding: 28px 0; overflow-x: auto; }
+.js .film { overflow: hidden; }
+.film::before, .film::after { content: ""; position: absolute; left: 0; right: 0; height: 10px; background: radial-gradient(circle, var(--white) 3.5px, transparent 4px) 0 0 / 22px 10px repeat-x; opacity: .85; }
+.film::before { top: 9px; } .film::after { bottom: 9px; }
+.film-strip { display: flex; gap: 12px; width: max-content; padding-inline: 16px; will-change: transform; }
+.film-strip figure { position: relative; margin: 0; flex: none; width: clamp(240px, 30vw, 380px); border-radius: 8px; overflow: hidden; }
+.film-strip img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.film-strip figcaption { position: absolute; left: 8px; bottom: 8px; right: 8px; font-size: 11.5px; font-weight: 700; color: var(--white); background: rgba(0,0,0,.6); padding: 4px 8px; border-radius: 6px; }
+
+/* Samaú: replay de uma resposta real no visual do widget */
+.widget { background: var(--white); border-radius: 20px; box-shadow: var(--shadow-lg); overflow: hidden; display: grid; grid-template-rows: auto 1fr auto; }
+.w-head { display: grid; grid-template-columns: 44px 1fr auto; gap: 10px; align-items: center; background: var(--ufra); color: var(--white); padding: 12px 14px; }
+.w-head img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: 50% 12%; border: 2px solid rgba(255,255,255,.7); }
+.w-head b { display: block; font-size: 16px; line-height: 1.1; }
+.w-head small { font-size: 12px; opacity: .9; }
+.w-live { font: 700 10.5px var(--mono); letter-spacing: .08em; text-transform: uppercase; background: rgba(255,255,255,.18); padding: 4px 8px; border-radius: 999px; }
+.w-body { padding: 14px; display: grid; gap: 10px; align-content: start; min-height: 300px; background: var(--white); }
+.w-msg { max-width: 92%; font-size: 14px; line-height: 1.5; border-radius: 14px; padding: 10px 13px; }
+.w-msg.me { justify-self: end; background: var(--ufra); color: var(--white); border-bottom-right-radius: 4px; }
+.w-msg.bot { background: var(--white); color: var(--ink); box-shadow: inset 0 0 0 1px var(--gray-100); border-bottom-left-radius: 4px; display: grid; gap: 8px; }
+.w-msg.bot b { color: var(--ink); }
+.w-src { font-size: 12.5px; color: var(--ufra); border-top: 1px dashed var(--gray-200); padding-top: 8px; }
+.w-src u { text-decoration-color: currentColor; }
+.w-typing { display: inline-flex; gap: 4px; background: var(--gray-50); padding: 10px 13px; border-radius: 14px; justify-self: start; }
+.w-typing i { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); animation: blink 1.2s ease-in-out infinite; }
+.w-typing i:nth-child(2) { animation-delay: .2s; } .w-typing i:nth-child(3) { animation-delay: .4s; }
+.w-typing { display: none; }
+.js .widget .w-typing.show { display: inline-flex; }
+.js .w-replay { display: inline-block; }
+.js .widget [data-s] { transition: opacity .45s var(--ease), transform .45s var(--ease); }
+.js .widget:not(.done) [data-s]:not(.show) { opacity: 0; transform: translateY(10px); }
+.w-foot { display: flex; justify-content: space-between; gap: 10px; align-items: center; padding: 10px 14px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--gray-100); }
+.w-replay { display: none; font: 700 12px var(--font); color: var(--ufra); background: var(--ufra-soft); border: 0; padding: 6px 10px; border-radius: 999px; cursor: pointer; white-space: nowrap; }
+
+/* Pro Sports: núcleo com integrações pulsando */
+.hub { display: grid; grid-template-columns: 1fr auto 1fr; gap: 14px 46px; align-items: center; }
+.hub-col { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.hub-col li { position: relative; background: var(--white); border-radius: 14px; padding: 12px 14px; box-shadow: var(--shadow-sm); }
+.hub-col li b { display: block; font-size: 14.5px; color: var(--ink); }
+.hub-col li span { font-size: 12.5px; color: var(--muted); }
+.hub-col li::after { content: ""; position: absolute; top: 50%; width: 46px; height: 2px; background: linear-gradient(90deg, var(--red) 50%, transparent 50%) 0 0 / 8px 2px; animation: dash 1s linear infinite; }
+.hub-col.l li::after { right: -46px; }
+.hub-col.r li::after { left: -46px; animation-direction: reverse; }
+.hub-core { position: relative; width: 150px; height: 150px; border-radius: 50%; background: var(--red); color: var(--white); display: grid; place-items: center; align-content: center; text-align: center; gap: 2px; box-shadow: 0 16px 36px rgba(234,29,44,.35); }
+.hub-core::before, .hub-core::after { content: ""; position: absolute; inset: -2px; border-radius: 50%; border: 2px solid var(--red); animation: pulse 2.6s ease-out infinite; }
+.hub-core::after { animation-delay: 1.3s; }
+@keyframes pulse { from { transform: scale(1); opacity: .6; } to { transform: scale(1.5); opacity: 0; } }
+.hub-core b { font-size: 20px; letter-spacing: -0.02em; }
+.hub-core small { font-size: 11.5px; font-weight: 700; opacity: .92; max-width: 12ch; line-height: 1.25; }
+@media (max-width: 760px) {
+  .hub { grid-template-columns: 1fr; justify-items: center; gap: 22px; }
+  .hub-core { order: -1; }
+  .hub-col { width: 100%; }
+  .hub-col li::after { display: none; }
+}
+
+/* Mundo Miau AuAu: escada de placas */
+.stairs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; align-items: end; height: 230px; }
+.stair { height: var(--h); background: var(--red-soft); border-radius: 14px 14px 0 0; display: grid; align-content: start; justify-items: center; text-align: center; padding: 12px 6px; gap: 2px; transform-origin: 50% 100%; transition: background .5s var(--ease), transform .6s var(--spring); }
+.stair b { font-size: clamp(15px, 2vw, 22px); color: var(--red-dark); letter-spacing: -0.02em; transition: color .4s; }
+.stair small { font-size: 12px; font-weight: 600; color: var(--muted); transition: color .4s; }
+.js .stair:not(.lit) { transform: scaleY(.84); }
+.stair.lit { background: var(--red); }
+.stair.lit b { color: var(--white); }
+.stair.lit small { color: rgba(255,255,255,.88); }
+
+/* Polaroids e visuais da trajetória */
+.polaroid { background: var(--white); padding: 12px 12px 14px; border-radius: 6px; box-shadow: var(--shadow-lg); width: min(100%, 340px); transform: rotate(-2.5deg); transition: transform .5s var(--spring); margin: 0; }
+.polaroid:hover { transform: rotate(0) scale(1.03); }
+.polaroid.tilt-r { transform: rotate(3deg); }
+.polaroid.wide { width: min(100%, 420px); transform: rotate(1.5deg); }
+.polaroid .shot { aspect-ratio: 4 / 5; border-radius: 3px; overflow: hidden; background: var(--gray-50); }
+.polaroid .shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.polaroid figcaption { margin-top: 10px; text-align: center; font-weight: 700; font-size: 14px; color: var(--muted); }
+.polaroid.mini { width: 200px; padding: 8px; }
+.polaroid.mini .shot { aspect-ratio: 3 / 4; }
+.photo-pair { position: relative; width: 100%; display: grid; place-items: center; padding-bottom: 70px; }
+.photo-pair > .polaroid:not(.mini) { margin-right: 22%; }
+.photo-pair .polaroid.mini { position: absolute; right: 0; bottom: 0; }
+.sales { width: min(100%, 360px); display: grid; gap: 10px; }
+.sale { display: grid; grid-template-columns: 40px 1fr auto; gap: 12px; align-items: center; background: var(--white); border-radius: 16px; padding: 12px 14px; box-shadow: var(--shadow-lg); }
+.sale:nth-child(2) { margin-left: 22px; } .sale:nth-child(3) { margin-left: 44px; }
+.sale .ic { width: 40px; height: 40px; border-radius: 12px; background: var(--red); color: var(--white); display: grid; place-items: center; }
+.sale b { display: block; font-size: 14.5px; color: var(--ink); }
+.sale small { font-size: 12.5px; color: var(--muted); font-weight: 600; }
+.sale em { font-style: normal; font-weight: 800; color: var(--green); font-size: 14px; white-space: nowrap; }
+.prompt { width: min(100%, 400px); background: var(--white); border-radius: 16px; box-shadow: var(--shadow-lg); overflow: hidden; transform: rotate(1.5deg); }
+.prompt-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: var(--gray-50); border-bottom: 1px solid var(--gray-100); }
+.prompt-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--gray-200); }
+.prompt-bar i:first-child { background: var(--red); }
+.prompt-bar span { margin-left: 8px; font-size: 12px; font-weight: 700; color: var(--muted); }
+.prompt-body { padding: 18px; display: grid; gap: 10px; }
+.prompt .b { padding: 9px 13px; border-radius: 16px; font-size: 13.5px; font-weight: 600; max-width: 86%; line-height: 1.35; }
+.prompt .b.out { background: var(--red); color: var(--white); justify-self: end; border-bottom-right-radius: 4px; }
+.prompt .b.in { background: var(--gray-50); color: var(--ink); border-bottom-left-radius: 4px; }
+.typing { display: inline-flex; gap: 4px; background: var(--gray-50); padding: 10px 13px; border-radius: 16px; justify-self: start; }
+.typing i { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); animation: blink 1.2s ease-in-out infinite; }
+.typing i:nth-child(2) { animation-delay: .2s; } .typing i:nth-child(3) { animation-delay: .4s; }
+.status-card { width: min(100%, 360px); background: var(--white); border-radius: 18px; box-shadow: var(--shadow-lg); overflow: hidden; }
+.sc-top { display: flex; align-items: center; gap: 10px; background: var(--red); color: var(--white); font-weight: 800; padding: 16px 20px; }
+.sc-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--white); animation: blink 1.2s ease-in-out infinite; }
+.sc-steps { list-style: none; margin: 0; padding: 16px 20px 20px; display: grid; gap: 14px; }
+.sc-steps li { position: relative; padding-left: 30px; font-weight: 700; color: var(--muted); font-size: 15px; }
+.sc-steps li::before { content: ""; position: absolute; left: 0; top: 3px; width: 18px; height: 18px; border-radius: 50%; border: 2.5px solid var(--gray-100); background: var(--white); }
+.sc-steps li.ok { color: var(--ink); }
+.sc-steps li.ok::before { background: var(--green); border-color: var(--green); }
+.sc-steps li.now { color: var(--red); }
+.sc-steps li.now::before { border-color: var(--red); border-style: dashed; animation: spin 3s linear infinite; }
+
+/* ============ TRAJETÓRIA ============ */
+.wave { display: block; width: 100%; height: 70px; margin-block: -1px; position: relative; }
+.wave-gray { fill: var(--gray-50); }
+.wave-red { fill: var(--red); }
+.journey { background: var(--gray-50); padding-top: 60px; }
+.odo { position: sticky; top: 84px; z-index: 6; width: max-content; max-width: 100%; margin: 0 auto 10px; display: grid; justify-items: center; background: var(--white); border-radius: 999px; padding: 8px 22px; box-shadow: var(--shadow-lg); pointer-events: none; transition: opacity .4s var(--ease), transform .4s var(--ease); }
+.odo small { font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.odo b { font-size: 22px; font-weight: 800; color: var(--red); font-variant-numeric: tabular-nums; letter-spacing: -0.02em; line-height: 1.15; }
+.odo.off { opacity: 0; transform: translateY(-10px); }
+@media (max-width: 860px) { .odo { top: 74px; padding: 5px 16px; } .odo small { font-size: 9.5px; } .odo b { font-size: 17px; } }
+.odo { display: none; }
+.js .odo { display: grid; }
+.tl { position: relative; --fill: 0px; }
+.tl::before, .tl::after { content: ""; position: absolute; left: 50%; top: 0; width: 3px; margin-left: -1.5px; border-radius: 3px; }
+.tl::before { bottom: 0; background: var(--gray-200); }
+.tl::after { bottom: 0; background: var(--red); transform-origin: 50% 0; transform: scaleY(var(--fp, 0)); }
+.rider { position: absolute; left: 50%; top: 0; transform: translate3d(0, var(--fill), 0); width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%; background: var(--red); color: var(--white); display: grid; place-items: center; z-index: 3; box-shadow: 0 0 0 6px var(--red-soft), 0 10px 20px rgba(234,29,44,.35); pointer-events: none; }
+.rider svg { animation: bagBob 1.2s ease-in-out infinite; }
+.tl-list { list-style: none; margin: 0; padding: 0; }
+.tl-list > li { position: relative; display: grid; grid-template-columns: 1fr 1fr; column-gap: 112px; align-items: center; padding-block: 38px; }
+.tl-list > li > * { min-width: 0; }
+.tl-list > li:nth-child(even) .tl-text { order: 3; }
+.tl-list > li:nth-child(even) .tl-visual { order: 1; }
+.tl .pin { position: absolute; left: 50%; top: 50%; width: 30px; height: 30px; margin: -15px 0 0 -15px; border-radius: 50%; background: var(--white); border: 3px solid var(--gray-200); display: grid; place-items: center; z-index: 1; transition: border-color .4s var(--ease), background .4s var(--ease), transform .4s var(--spring); }
+.tl .pin::after { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--gray-200); transition: background .4s; }
+.tl-list > li.reached .pin { border-color: var(--red); background: var(--red); transform: scale(1.12); }
+.tl-list > li.reached .pin::after { background: var(--white); }
+.tl-text { background: var(--white); border-radius: var(--r-lg); padding: 28px 30px; box-shadow: var(--shadow-lg); position: relative; transition: transform .5s var(--ease); }
+.tl-list > li.reached .tl-text { transform: translateY(-4px); }
+.tl-text::before { content: ""; position: absolute; top: 50%; right: -9px; width: 18px; height: 18px; margin-top: -9px; background: var(--white); transform: rotate(45deg); border-radius: 3px; }
+.tl-list > li:nth-child(even) .tl-text::before { right: auto; left: -9px; }
+.tl .when { font-size: 13px; font-weight: 800; color: var(--red); text-transform: uppercase; letter-spacing: .07em; }
+.tl h3 { font-size: clamp(24px, 2.6vw, 31px); margin-top: 4px; }
+.tl-text p { color: var(--muted); font-size: 16px; margin-top: 10px; }
+.tl .res { display: grid; gap: 2px; margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--gray-100); font-size: 15px; font-weight: 600; color: var(--ink); }
+.tl .res small { font-size: 11px; font-weight: 800; color: var(--red); text-transform: uppercase; letter-spacing: .07em; }
+.tl-visual { margin: 0; display: grid; place-items: center; min-height: 280px; }
+@media (max-width: 860px) {
+  .tl::before, .tl::after, .rider { left: 16px; }
+  .rider { width: 36px; height: 36px; margin: -18px 0 0 -18px; }
+  .tl-list > li { grid-template-columns: 1fr; row-gap: 24px; padding: 24px 0 24px 46px; }
+  .tl-list > li:nth-child(even) .tl-text, .tl-list > li:nth-child(even) .tl-visual { order: 0; }
+  .tl .pin { left: 16px; top: 52px; }
+  .tl-text::before, .tl-list > li:nth-child(even) .tl-text::before { display: none; }
+  .tl-visual { min-height: 0; }
+}
+@media (max-width: 460px) { .polaroid.mini { width: 150px; } }
+
+/* ============ MODO DE FAZER ============ */
+.modo-sec { background: var(--white); }
+.method { list-style: none; margin: 0 0 46px; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; position: relative; counter-reset: m; --p: 1; }
+.method::before { content: ""; position: absolute; left: 22px; right: 22px; top: 21px; height: 3px; background: var(--gray-200); border-radius: 3px; }
+.method::after { content: ""; position: absolute; left: 22px; top: 21px; height: 3px; width: calc(100% - 44px); background: var(--red); border-radius: 3px; transform-origin: 0 50%; transform: scaleX(var(--p)); }
+.method li { position: relative; padding-top: 62px; counter-increment: m; min-width: 0; }
+.method li::before { content: counter(m); position: absolute; top: 0; left: 0; width: 44px; height: 44px; border-radius: 50%; background: var(--red); border: 3px solid var(--red); color: var(--white); display: grid; place-items: center; font-weight: 800; z-index: 1; transition: background .4s, border-color .4s, color .4s, transform .4s var(--spring); }
+.js .method li:not(.lit)::before { background: var(--white); border-color: var(--gray-200); color: var(--muted); }
+.method li.lit::before { transform: scale(1.08); }
+.method h3 { font-size: 18px; letter-spacing: -0.02em; }
+.method p { font-size: 14.5px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
+@media (max-width: 800px) {
+  .method { grid-template-columns: 1fr; gap: 24px; }
+  .method::before { right: auto; bottom: 22px; width: 3px; height: auto; left: 20.5px; top: 22px; }
+  .method::after { width: 3px; left: 20.5px; top: 22px; height: calc(100% - 44px); transform-origin: 50% 0; transform: scaleY(var(--p)); }
+  .method li { padding: 0 0 0 62px; min-height: 44px; }
+}
+.pband { scroll-margin-top: 96px; display: grid; grid-template-columns: 1fr 1.1fr; gap: 30px; align-items: center; background: var(--gray-50); border-radius: 28px; padding: clamp(22px, 4vw, 42px); margin-bottom: 22px; }
+.pband > * { min-width: 0; }
+@media (max-width: 860px) { .pband { grid-template-columns: 1fr; } }
+.pband h3 { font-size: clamp(24px, 3vw, 34px); margin-top: 10px; }
+.pband p { color: var(--muted); font-size: 16px; margin-top: 12px; }
+.pband p b { color: var(--ink); }
+.pcode { background: var(--white); border-radius: 18px; box-shadow: var(--shadow-lg); overflow: hidden; }
+.pcode-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: var(--white); border-bottom: 1px solid var(--gray-100); font: 700 12px var(--mono); color: var(--muted); }
+.pcode-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--gray-200); }
+.pcode-bar i:first-child { background: var(--red); }
+.pcode-bar span { margin-left: 8px; }
+.pcode ol { list-style: none; margin: 0; padding: 10px; display: grid; gap: 4px; }
+.pcode li { display: grid; grid-template-columns: 84px 1fr; gap: 12px; align-items: baseline; padding: 9px 10px; border-radius: 10px; font-size: 13.5px; line-height: 1.45; color: var(--text); animation: lineOn 8s linear infinite; animation-delay: calc(var(--i, 0) * 1.6s); }
+.pcode li b { font: 700 11px var(--mono); letter-spacing: .06em; color: var(--red); }
+@keyframes lineOn { 0%, 22%, 100% { background: transparent; } 2%, 18% { background: var(--red-soft); } }
+@media (max-width: 480px) { .pcode li { grid-template-columns: 1fr; gap: 2px; } }
+.ingr { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; perspective: 1200px; }
+@media (max-width: 960px) { .ingr { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .ingr { grid-template-columns: 1fr; } }
+.ing { background: var(--gray-50); border-radius: 20px; padding: 22px; display: grid; gap: 10px; align-content: start; transition: transform .3s var(--ease), box-shadow .4s var(--ease), background .3s; min-width: 0; }
+.ing:hover { background: var(--white); box-shadow: var(--shadow-lg); }
+.ing .ic { width: 46px; height: 46px; border-radius: 14px; background: var(--red-soft); color: var(--red); display: grid; place-items: center; transition: transform .5s var(--spring), background .3s, color .3s; }
+.ing:hover .ic { transform: rotate(-12deg) scale(1.1); background: var(--red); color: var(--white); }
+.ing .ic svg { animation: wig 5s ease-in-out infinite; animation-delay: calc(var(--i, 0) * .5s); }
+@keyframes wig { 0%, 86%, 100% { transform: none; } 90% { transform: rotate(-12deg) scale(1.12); } 95% { transform: rotate(8deg) scale(1.12); } }
+.ing h3 { font-size: 18px; letter-spacing: -0.02em; }
+.ing p { font-size: 14.5px; color: var(--muted); line-height: 1.55; }
+.ing .tools { display: flex; flex-wrap: wrap; gap: 6px; }
+.ing .tools span { font-size: 12px; font-weight: 700; color: var(--text); background: var(--white); padding: 4px 9px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--gray-100); }
+.ingr.two { grid-template-columns: repeat(2, 1fr); margin-top: 16px; }
+@media (max-width: 600px) { .ingr.two { grid-template-columns: 1fr; } }
+
+/* ============ JEITO iFOOD (cartas empilhadas) ============ */
+.jeito-sec { background: var(--red); color: var(--white); padding-block: 70px 110px; }
+.jeito-sec .eyebrow { color: var(--white); }
+.jeito-sec h2 { color: var(--white); }
+.jeito-sec .sec-head p { color: rgba(255,255,255,.9); }
+.stack { display: flex; flex-direction: column; gap: 22px; }
+.stack-card { position: sticky; top: calc(92px + var(--i) * 14px); background: var(--white); color: var(--text); border-radius: 28px; padding: clamp(22px, 3.6vw, 40px); display: grid; grid-template-columns: 330px 1fr; gap: 32px; align-items: center; box-shadow: 0 -8px 30px rgba(120,0,10,.16), 0 24px 44px rgba(120,0,10,.22); transform-origin: 50% 0; transform: scale(var(--s, 1)); transition: transform .35s var(--ease); }
+.stack-card > * { min-width: 0; }
+@media (max-width: 820px) { .stack-card { grid-template-columns: 1fr; gap: 14px; } }
+.valor { display: grid; gap: 8px; }
+.valor small { font: 700 12px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--red); }
+.valor b { font-size: clamp(28px, 3.2vw, 42px); overflow-wrap: anywhere; font-weight: 800; color: var(--ink); letter-spacing: -0.04em; line-height: 1; }
+.stack-card p { font-size: 17px; color: var(--text); line-height: 1.6; }
+.stack-card p b { color: var(--ink); }
+.stack-card .chips-l { margin-top: 12px; }
+
+/* ============ CONTATO ============ */
+.contact-sec { padding-block: 100px 130px; }
+.contact { background: var(--white); border-radius: 30px; box-shadow: var(--shadow-lg); padding: clamp(28px, 5vw, 60px); display: grid; grid-template-columns: 1.15fr 1fr; gap: 36px; align-items: center; position: relative; overflow: hidden; }
+.contact::before { content: ""; position: absolute; width: 340px; height: 340px; border-radius: 50%; background: var(--red-soft); right: -120px; top: -140px; animation: float 12s ease-in-out infinite; }
+.contact > * { min-width: 0; position: relative; }
+.contact h2 { font-size: clamp(34px, 5vw, 56px); }
+.contact h2 span { color: var(--red); }
+.contact p { color: var(--muted); margin-top: 14px; font-size: 17px; max-width: 42ch; }
+.contact .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.contact ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.contact li { background: var(--gray-50); border-radius: 14px; padding: 13px 16px; display: grid; gap: 2px; overflow-wrap: anywhere; transition: transform .25s var(--ease), background .25s; }
+.contact li:hover { transform: translateX(4px); background: var(--red-soft); }
+.contact li small { font-size: 11.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .07em; color: var(--red); }
+.contact li span, .contact li a { font-weight: 700; color: var(--ink); }
+@media (max-width: 840px) { .contact { grid-template-columns: 1fr; } }
+footer { padding-block: 8px 110px; color: var(--muted); font-size: 13.5px; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; border-top: 1px solid var(--gray-100); padding-top: 24px; }
+
+/* ============ SACOLA (acompanha a leitura dos casos) ============ */
+.sacola { position: fixed; left: 50%; bottom: calc(14px + env(safe-area-inset-bottom, 0px)); z-index: 45; translate: -50% 0; display: none; grid-template-columns: auto 1fr auto; gap: 12px; align-items: center; width: min(460px, calc(100% - 24px)); background: var(--red); color: var(--white); border-radius: 18px; padding: 9px 9px 9px 14px; box-shadow: 0 16px 36px rgba(160,10,25,.4); transform: translateY(140%); transition: transform .5s var(--spring); }
+.js .sacola { display: grid; }
+.sacola.show { transform: none; }
+.sacola .bag { position: relative; width: 34px; height: 34px; display: grid; place-items: center; }
+.sacola .bag em { position: absolute; right: -6px; top: -6px; min-width: 19px; height: 19px; border-radius: 999px; background: var(--white); color: var(--red); font: 800 11.5px/19px var(--font); font-style: normal; text-align: center; padding-inline: 4px; }
+.sacola .bag.bump { animation: bump .5s var(--spring); }
+@keyframes bump { 40% { transform: scale(1.3) rotate(-8deg); } }
+.sacola-t { min-width: 0; display: grid; gap: 4px; }
+.sacola-t b { font-size: 13.5px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sacola-t i { display: block; height: 4px; border-radius: 4px; background: rgba(255,255,255,.3); overflow: hidden; }
+.sacola-t i::after { content: ""; display: block; height: 100%; background: var(--white); border-radius: 4px; transform-origin: 0 50%; transform: scaleX(var(--sp, 0)); transition: transform .5s var(--ease); }
+.sacola a { font: 800 13.5px/1 var(--font); color: var(--red); background: var(--white); text-decoration: none; padding: 11px 14px; border-radius: 12px; white-space: nowrap; }
+
+/* ============ REVELAÇÕES ============ */
+.js .reveal { transition: opacity .8s var(--ease), transform .8s var(--ease), clip-path 1s var(--ease); transition-delay: var(--d, 0s); }
+.js .reveal.wait { opacity: 0; transform: translateY(34px); }
+.js .reveal.mask { clip-path: inset(-12% -4% -12% -4%); }
+.js .reveal.mask.wait { opacity: 1; transform: translateY(26px); clip-path: inset(0 0 100% 0); }
+.js .reveal.zoom.wait { transform: scale(.93); }
+.js .reveal.flip.wait { transform: perspective(900px) rotateX(-16deg) translateY(30px); transform-origin: 50% 0; }
+.js .reveal.from-l.wait { transform: translateX(-56px); }
+.js .reveal.from-r.wait { transform: translateX(56px); }
+@media (max-width: 860px) { .js .reveal.from-l.wait, .js .reveal.from-r.wait { transform: translateY(34px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .js .reveal.wait { opacity: 1; transform: none; clip-path: none; }
+  .js #intro { display: none; }
+}
+</style>
+
+<!-- ABERTURA (visual; o conteúdo da página continua inteiro no HTML para quem lê sem JavaScript) -->
+<div id="intro" aria-hidden="true">
+  <div class="intro-grid"></div>
+  <span class="intro-ring"></span><span class="intro-ring r2"></span><span class="intro-ring r3"></span>
+  <div class="intro-in">
+    <div class="intro-bag"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M9.5 13.5l1.8 1.8 3.4-3.6"/></svg></div>
+    <div class="intro-pre" id="introPre">Um portfólio feito para o processo seletivo do iFood Gen AI 2027</div>
+    <div class="intro-kicker">apresentando</div>
+    <div class="intro-name" id="introName">Murilo Brandão</div>
+    <div class="intro-sub">AI Builder · de Castanhal (PA) para o Brasil inteiro</div>
+    <div class="intro-track"><i></i>
+      <svg class="intro-moto" viewBox="0 0 64 44" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="34" r="7"/><circle cx="50" cy="34" r="7"/><path d="M12 34h12l8-14h8l6 14"/><path d="M30 20h-8"/><rect x="2" y="12" width="16" height="13" rx="3" fill="currentColor" stroke="none"/><path d="M40 20l-3-9h-6"/></svg>
+    </div>
+    <div class="intro-steps"><span>Pedido aceito</span><span>Preparando</span><span>Saiu para entrega</span></div>
+  </div>
+  <button class="intro-skip" type="button" id="introSkip">Pular abertura</button>
+</div>
+<script>
+  (function () {
+    var d = document.documentElement;
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    d.classList.add('js');
+    if (!reduce) d.classList.add('intro-on');
+    var n = document.getElementById('introName');
+    if (n) {
+      var t = 0;
+      n.innerHTML = n.textContent.split(' ').map(function (w) {
+        return '<span class="wd">' + w.split('').map(function (c) { t++; return '<span class="ch" style="animation-delay:' + (1.65 + t * 0.045).toFixed(3) + 's">' + c + '</span>'; }).join('') + '</span>';
+      }).join(' ');
+    }
+    var pre = document.getElementById('introPre');
+    if (pre) {
+      var k = 0;
+      pre.innerHTML = pre.textContent.split('').map(function (c) {
+        k++; return '<span class="pc" style="animation-delay:' + (0.25 + k * 0.018).toFixed(3) + 's">' + c + '</span>';
+      }).join('') + '<span class="caret"></span>';
+    }
+  })();
+</script>
+
+<div class="progress" id="progress"></div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="#topo"><span class="mono">mb</span><span class="brand-t">Murilo Brandão</span></a>
+    <ul>
+      <li><a href="#pedido">O pedido</a></li>
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="#casos">Casos</a></li>
+      <li><a href="#trajetoria">Trajetória</a></li>
+      <li><a href="#modo">Modo de fazer</a></li>
+      <li><a href="#jeito">Jeito iFood</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-line btn-sm" href="https://www.linkedin.com/in/murilobrandao-ia" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-red btn-sm" href="#contato">Falar comigo</a>
+    </div>
+  </div>
+</header>
+
+<main id="topo">
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+    <div class="wrap hero-center">
+      <span class="loc fade-in"><span class="dot"></span>Castanhal, PA · disponível para trabalho remoto</span>
+      <h1 aria-label="Pedido de IA? Eu entrego funcionando.">
+        <span class="w"><span style="animation-delay:.05s">Pedido</span></span>
+        <span class="w"><span style="animation-delay:.13s">de</span></span>
+        <span class="w"><span style="animation-delay:.21s">IA?</span></span><br>
+        <span class="w"><span style="animation-delay:.32s">Eu</span></span>
+        <span class="w"><span class="red ul" style="animation-delay:.40s">entrego</span></span>
+        <span class="w"><span class="red ul" style="animation-delay:.48s">funcionando.</span></span>
+      </h1>
+      <p class="lead fade-in" style="animation-delay:.7s">Tenho 18 anos e sou de Castanhal, no interior do Pará. Aos 15, o e-commerce que eu criei com meu pai passou de <b>R$ 1 milhão em vendas</b>. Hoje eu construo agentes, automações e sistemas com IA que rodam numa <b>universidade federal</b>, numa clínica veterinária e em empresas do Pará.</p>
+      <div class="ctas fade-in" style="animation-delay:.85s">
+        <a class="btn btn-red" href="#pedido">Ver o resumo do pedido <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-soft" href="#cardapio">Abrir o cardápio</a>
+        <a class="btn btn-line" href="https://www.linkedin.com/in/murilobrandao-ia" target="_blank" rel="noopener">Meu LinkedIn <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+    </div>
+
+    <!-- FOTO PROTAGONISTA + COMBO AI BUILDER -->
+    <div class="wrap">
+      <div class="combo-wrap">
+        <article class="combo" aria-label="Pedido de exemplo: Combo AI Builder com Murilo Brandão">
+          <div class="combo-stage" id="stage">
+            <span class="stage-dots" aria-hidden="true"></span>
+            <span class="stage-word" aria-hidden="true">AI Builder</span>
+            <span class="stage-halo" aria-hidden="true"></span>
+            <span class="orbit" aria-hidden="true"><i></i></span>
+            <div class="stage-photo"><img src="murilo-combo.webp" alt="Murilo Brandão sorrindo, de camisa polo branca" width="1100" height="852"></div>
+            <div class="selo s1"><span class="selo-in pill"><i class="dotr"></i>Mais pedido de Castanhal</span></div>
+            <div class="selo s2"><span class="selo-in pill red">Gen AI 2027</span></div>
+            <div class="selo s3"><span class="selo-in tile">18 anos<small>Castanhal · PA</small></span></div>
+            <div class="selo s4"><span class="selo-in seal">R$ 1 mi<small>em vendas aos 15</small></span></div>
+            <div class="selo s5"><span class="selo-in pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Entrega grátis · remoto</span></div>
+          </div>
+          <div class="combo-body">
+            <div class="combo-head">
+              <small>Seu pedido · 1 AI Builder</small>
+              <h2>Combo AI Builder</h2>
+              <p>Murilo Brandão. Vem com agentes de IA em produção, uma universidade federal atendida e o histórico de quem já vendeu R$ 1 milhão.</p>
+            </div>
+            <ul class="combo-items">
+              <li><span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><b>R$ 1 milhão</b><span>em vendas no e-commerce que criei aos 15</span></li>
+              <li><span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10 12 5l9 5-9 5z"/><path d="M7 12v5c3 2 7 2 10 0v-5"/></svg></span><b>UFRA</b><span>assistente de IA no site de uma universidade federal</span></li>
+              <li><span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg></span><b>Science Pro</b><span>revisão de literatura com agentes de IA, no ar</span></li>
+              <li><span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/><path d="M6 7l4 3M18 7l-4 3M6 17l4-3M18 17l-4-3"/></svg></span><b>179 subagentes</b><span>orquestrados num filme feito 100% em código</span></li>
+              <li><span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><b>Clínica</b><span>sistema com CRM, funis e automações n8n</span></li>
+            </ul>
+            <div class="combo-grid">
+              <div class="combo-col">
+                <fieldset class="opt-group">
+                  <legend class="opt-title"><span>Adicionais</span><small>já vêm marcados</small></legend>
+                  <label class="opt"><input type="checkbox" id="add-talento" checked><span>Excesso de talento</span><em>grátis</em></label>
+                  <label class="opt"><input type="checkbox" id="add-dedicacao" checked><span>Dedicação em dose dupla</span><em>grátis</em></label>
+                  <label class="opt"><input type="checkbox" id="add-esforco" checked><span>Esforço sem moderação</span><em>grátis</em></label>
+                  <label class="opt"><input type="checkbox" id="add-curiosidade" checked><span>Curiosidade que não desliga</span><em>grátis</em></label>
+                </fieldset>
+                <div class="opt-group">
+                  <div class="opt-title"><span>Retirar</span><small>já removido</small></div>
+                  <div class="removed"><s>Preguiça</s><s>Desculpinha</s><s>“Isso não dá pra automatizar”</s></div>
+                </div>
+              </div>
+              <div class="combo-col">
+                <div class="obs"><small>Observação do pedido</small><p>Pode mandar problema difícil. Eu devolvo resolvido e com métrica.</p></div>
+                <p class="toast" id="toast" role="status" aria-live="polite"></p>
+                <div class="combo-foot">
+                  <span class="row"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Entrega grátis: <b>remoto, de Castanhal (PA)</b></span></span>
+                  <span class="row"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Pronto para começar em <b>fevereiro de 2027</b>, 30 h por semana</span></span>
+                  <div class="buy">
+                    <div class="stepper"><button type="button" id="menos" aria-label="Diminuir quantidade">−</button><span id="qtd" aria-live="polite">1</span><button type="button" id="mais" aria-label="Aumentar quantidade">+</button></div>
+                    <a class="btn btn-red" href="#pedido">Adicionar ao time</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXA -->
+  <div class="ribbon" id="ribbon" aria-hidden="true">
+    <div class="ribbon-in">
+      <div class="marquee">
+        <span>Prompt engineering</span><span>Orquestração de agentes</span><span>Claude · GPT · Gemini · Qwen</span><span>RAG</span><span>n8n</span><span>Vibe coding</span><span>APIs e webhooks</span><span>Dados com IA</span><span>Shopify</span><span>Tráfego pago e SEO</span>
+        <span>Prompt engineering</span><span>Orquestração de agentes</span><span>Claude · GPT · Gemini · Qwen</span><span>RAG</span><span>n8n</span><span>Vibe coding</span><span>APIs e webhooks</span><span>Dados com IA</span><span>Shopify</span><span>Tráfego pago e SEO</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMANDA: REQUISITOS DA VAGA × EVIDÊNCIAS -->
+  <section class="check-sec" id="pedido">
+    <span class="ghost" data-ghost aria-hidden="true">Pedido conferido</span>
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow reveal">Conferindo o pedido</span>
+        <h2 class="reveal mask">O que a trilha AI Builder pede, item por item, e onde está no meu portfólio</h2>
+        <p class="reveal" style="--d:.1s">Os títulos abaixo são as palavras da própria vaga. Role a página: cada item é conferido com a evidência e o link para o caso.</p>
+      </div>
+
+      <div class="check-grid" id="check">
+        <aside class="comanda" id="comanda" aria-label="Resumo da conferência: 11 de 11 itens da vaga atendidos">
+          <div class="comanda-card">
+            <span class="comanda-k">Comanda · Gen AI 2027</span>
+            <div class="ring" id="ring">
+              <svg width="168" height="168" viewBox="0 0 168 168" aria-hidden="true"><circle class="bg" cx="84" cy="84" r="70"/><circle class="fg" cx="84" cy="84" r="70"/></svg>
+              <div class="n"><b id="ringN">11</b><span>de 11</span></div>
+            </div>
+            <p>itens da vaga conferidos</p>
+            <div class="cbars">
+              <div class="cbar" id="bar1"><span>Portfólio esperado · <span id="bar1n">5</span> de 5</span><i></i></div>
+              <div class="cbar" id="bar2"><span>Ingredientes buscados · <span id="bar2n">6</span> de 6</span><i></i></div>
+            </div>
+            <span class="stamp">Pedido conferido</span>
+          </div>
+        </aside>
+
+        <div class="check-list">
+          <h3 class="check-group">No portfólio, é esperado encontrar <small>texto da vaga</small></h3>
+          <article class="crow" data-g="1"><span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Automações que economizaram horas reais</b><p>Uma revisão de literatura que leva semanas sai em 20 a 30 minutos no Science Pro. O catálogo inteiro de uma loja é criado e mantido por uma equipe de agentes.</p><div class="chips-l"><a href="#caso-science">Science Pro</a><a href="#caso-prosports">Pro Sports</a></div></div></article>
+          <article class="crow" data-g="1"><span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Ferramentas internas deployadas</b><p>Sistema de gestão e CRM da clínica Miau AuAu, rodando sobre a base real de 2.872 clientes. Painel admin do Science Pro com créditos, planos e custo de LLM por projeto.</p><div class="chips-l"><a href="#caso-clinica">Clínica</a><a href="#caso-science">Science Pro</a></div></div></article>
+          <article class="crow" data-g="1"><span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Dashboards funcionais</b><p>Painel da direção com faturamento e lucro, funil de orçamentos em kanban e segmentação RFM dos clientes da clínica.</p><div class="chips-l"><a href="#caso-clinica">Ver as telas</a></div></div></article>
+          <article class="crow" data-g="1"><span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Agentes que resolvem problemas de negócio</b><p>A Samaú responde candidatos no site oficial de um programa de pós da UFRA, citando o edital. No Science Pro, um modelo lê, outro escreve e um terceiro confere cada citação.</p><div class="chips-l"><a href="#caso-samau">Samaú</a><a href="#caso-science">Science Pro</a></div></div></article>
+          <article class="crow" data-g="1"><span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Demos de produtos construídos do zero em dias</b><p>Filme de lançamento do Science Pro com cara de agência, feito 100% em código por 179 subagentes em cerca de 33 horas.</p><div class="chips-l"><a href="#caso-video">Ver o filme</a></div></div></article>
+
+          <h3 class="check-group">Ingredientes que buscamos <small>requisitos da vaga</small></h3>
+          <article class="crow" data-g="2"><span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Prompt engineering avançado</b><p>Anos de prática diária com ChatGPT, Claude e Gemini em trabalho real. Escrevo personas com regras, fonte obrigatória, formato de saída e testes antes de ir ao ar.</p><div class="chips-l"><a href="#prompt">Como eu escrevo prompts</a><a href="#caso-samau">Resposta real da Samaú</a></div></div></article>
+          <article class="crow" data-g="2"><span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Orquestração de agentes (Claude, GPT, Gemini)</b><p>Claude, Qwen e um verificador com papéis separados no Science Pro; 179 subagentes no filme; 14 agentes de domínio e 9 revisores no sistema da clínica; uma equipe de agentes operando lojas na Shopify; Gemini na Samaú.</p><div class="chips-l"><a href="#caso-science">Science Pro</a><a href="#caso-video">Filme</a><a href="#caso-prosports">Pro Sports</a></div></div></article>
+          <article class="crow" data-g="2"><span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Automações com n8n, Make, Zapier</b><p>7 fluxos n8n desenhados para a clínica, um deles com LLM classificando mensagens, e um motor próprio “Quando → Se → Então” com 12 receitas.</p><div class="chips-l"><a href="#caso-clinica">Ver o fluxo</a></div></div></article>
+          <article class="crow" data-g="2"><span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Vibe coding</b><p>Sistema completo em React e Node, assistente em Cloudflare Workers, plataforma em Python e um filme inteiro em HTML, construídos com Claude Code e Codex.</p><div class="chips-l"><a href="#modo">Modo de fazer</a></div></div></article>
+          <article class="crow" data-g="2"><span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Desenvolvimento de APIs sem backend profundo</b><p>API pública com 21 rotas e webhooks assinados; webhook da Hotmart; Shopify Admin GraphQL; Merchant Center; Gemini; CrossRef, OpenAlex e Semantic Scholar.</p><div class="chips-l"><a href="#caso-clinica">Clínica</a><a href="#caso-prosports">Pro Sports</a></div></div></article>
+          <article class="crow" data-g="2"><span class="ck"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Análise de dados com IA</b><p>Segmentação RFM e funil de conversão na clínica; análise de campanhas de anúncios de clientes em pandas; R$ 200 mil em anúncios gerenciados no meu e-commerce, lendo número todo dia.</p><div class="chips-l"><a href="#outros">Outros clientes</a><a href="#caso-mundo">Mundo Miau AuAu</a></div></div></article>
+        </div>
+      </div>
+
+      <div class="ficha reveal flip">
+        <div>
+          <h3><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span>Resumo em 20 segundos</h3>
+          <p><b>Murilo Brandão</b>, 18 anos, de Castanhal (PA), cursa Inteligência Artificial na FIAP. Criou aos 13 a loja online Mundo Miau AuAu, que passou de <b>R$ 1 milhão em vendas</b> quando ele tinha 15. Hoje constrói com IA: o <b>Science Pro</b> (plataforma no ar que orquestra Claude, Qwen e um modelo verificador para gerar revisões de literatura auditadas), a <b>Samaú</b> (assistente com RAG no site oficial do PPGSPAA da UFRA), o sistema de gestão e CRM de uma clínica veterinária e lojas Shopify operadas por uma equipe de agentes. Vem do marketing digital e hoje tem a IA como área principal.</p>
+        </div>
+        <dl>
+          <dt>Trilha</dt><dd>AI Builder · iFood Gen AI 2027</dd>
+          <dt>Formação</dt><dd>Inteligência Artificial · FIAP · turma 2026</dd>
+          <dt>Onde</dt><dd>Castanhal (PA) · trabalho remoto</dd>
+          <dt>Carga</dt><dd>30 horas por semana, a partir de fevereiro de 2027</dd>
+          <dt>Ferramentas</dt><dd>Claude, GPT, Gemini, n8n, Claude Code, Codex, Shopify, Python</dd>
+          <dt>Idiomas</dt><dd>Português nativo · inglês intermediário: leio documentação técnica com facilidade</dd>
+          <dt>Certificados</dt><dd>Google Ads (EBMD, 2024) · Branding (60 h) · Neuromarketing (40 h) · PNL (40 h)</dd>
+          <dt>No ar</dt><dd>sciencepro.app.br · ppgspaa.ufra.edu.br · mundomiauauau.com.br · prosportsbr.com.br</dd>
+          <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/murilobrandao-ia" target="_blank" rel="noopener">linkedin.com/in/murilobrandao-ia</a></dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO -->
+  <section class="menu-sec" id="cardapio">
+    <span class="ghost" data-ghost aria-hidden="true">Cardápio</span>
+    <div class="wrap">
+      <div class="store reveal zoom">
+        <div class="store-cover" aria-hidden="true"><span>AI Builder</span></div>
+        <div class="store-info">
+          <img class="store-logo" src="murilo-avatar.jpg" alt="" width="400" height="400">
+          <div>
+            <h2>Murilo Brandão · Cozinha de IA</h2>
+            <div class="store-meta"><span>IA aplicada a negócios</span><span>· Castanhal, PA</span><span>· Entrega remota</span><span class="free">· Grátis</span></div>
+          </div>
+          <span class="store-open">Aberto agora</span>
+        </div>
+        <nav class="cats" aria-label="Categorias do cardápio">
+          <a href="#cat-pedidos">Mais pedidos</a>
+          <a href="#cat-zero">Feito do zero em dias</a>
+          <a href="#cat-ecom">E-commerce e growth</a>
+          <a href="#cat-fiap">Faculdade</a>
+        </nav>
+        <div class="menu-body">
+          <div class="menu-cat" id="cat-pedidos">
+            <h3>Mais pedidos <small>agentes e sistemas em uso</small></h3>
+            <div class="items">
+              <a class="item tilt reveal" href="#caso-science"><div><h4>Science Pro</h4><p>Plataforma que orquestra Claude, Qwen e um modelo verificador para transformar 25 a 50 artigos numa revisão de literatura com citações auditadas.</p><div class="price"><span class="tag live">No ar</span><b>~20–30 min por revisão</b></div></div><div class="item-img"><img src="sp-video-f3.jpg" alt="" loading="lazy"></div><span class="plus" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></a>
+              <a class="item tilt reveal" href="#caso-samau" style="--d:.08s"><div><h4>Samaú · UFRA</h4><p>Assistente com RAG e Gemini no site oficial do Programa de Pós-Graduação em Saúde e Produção Animal na Amazônia da UFRA.</p><div class="price"><span class="tag live">No ar</span><b>Universidade federal</b></div></div><div class="item-img"><img src="samau-widget.jpg" alt="" loading="lazy" style="object-position:top"></div><span class="plus" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></a>
+              <a class="item tilt reveal" href="#caso-clinica"><div><h4>Sistema da clínica Miau AuAu</h4><p>Gestão, CRM com funis, segmentação RFM, automações, API e fluxos n8n com LLM para uma clínica veterinária.</p><div class="price"><span class="tag wip">Em implantação</span><b>2.872 clientes migrados</b></div></div><div class="item-img"><img src="sv-funil.jpg" alt="" loading="lazy" style="object-position:left top"></div><span class="plus" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></a>
+              <a class="item tilt reveal" href="#caso-video" style="--d:.08s"><div><h4>Filme do Science Pro</h4><p>1min44 de motion design com 3D, animação de logo e narração sincronizada palavra a palavra. 100% código, sem banco de imagens.</p><div class="price"><span class="tag red">Destaque</span><b>179 subagentes</b></div></div><div class="item-img"><img src="sp-video-f1.jpg" alt="" loading="lazy"></div><span class="plus" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></a>
+            </div>
+          </div>
+          <div class="menu-cat" id="cat-zero">
+            <h3>Feito do zero em dias <small>da ideia ao ar</small></h3>
+            <div class="items">
+              <a class="item tilt reveal" href="#caso-video"><div><h4>Filme de lançamento em ~33 horas</h4><p>Roteiro, storyboard, 24 cenas animadas, 3D em CSS, trilha e cerca de 180 efeitos sonoros mixados, em 16:9 e 9:16.</p><div class="price"><span class="tag live">Pronto</span><b>2 formatos</b></div></div><div class="item-img"><img src="sp-video-f4.jpg" alt="" loading="lazy"></div><span class="plus" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></a>
+              <a class="item tilt reveal" href="#caso-samau" style="--d:.08s"><div><h4>Samaú, do crawler ao site</h4><p>Coleta do portal, base de conhecimento, busca, persona e widget com uma linha de script no site da universidade.</p><div class="price"><span class="tag live">No ar</span><b>R$ 10–30 por mês</b></div></div><div class="item-img"><img src="samau.jpg" alt="" loading="lazy" style="object-position:top"></div><span class="plus" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></a>
+            </div>
+          </div>
+          <div class="menu-cat" id="cat-ecom">
+            <h3>E-commerce e growth <small>onde tudo começou</small></h3>
+            <div class="items">
+              <a class="item tilt reveal" href="#caso-mundo"><div><h4>Mundo Miau AuAu</h4><p>Loja online de produtos pet que eu criei aos 13 com meu pai. Tráfego pago, operação e marca, até R$ 1 milhão em vendas aos 15.</p><div class="price"><span class="tag live">No ar</span><b>R$ 1 milhão em vendas</b></div></div><div class="item-img"><img src="placa-1mi.jpg" alt="" loading="lazy" style="object-position:50% 25%"></div><span class="plus" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></a>
+              <a class="item tilt reveal" href="#caso-prosports" style="--d:.08s"><div><h4>Pro Sports</h4><p>Loja Shopify construída com IA e operada por uma equipe de agentes, integrada a Google Analytics, Google Ads, Merchant Center e Search Console.</p><div class="price"><span class="tag live">No ar</span><b>Catálogo 100% com IA</b></div></div><div class="item-img"><img src="ps-site.jpg" alt="" loading="lazy" style="object-position:30% 50%"></div><span class="plus" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></a>
+            </div>
+          </div>
+          <div class="menu-cat" id="cat-fiap">
+            <h3>Faculdade <small>FIAP · Inteligência Artificial</small></h3>
+            <div class="items">
+              <a class="item tilt reveal" href="#outros"><div><h4>FarmTech</h4><p>Central de operações que junta sensores, modelos de ML, visão computacional e alertas na AWS.</p><div class="price"><span class="tag live">Entregue</span><b>44 testes passando</b></div></div><div class="item-img"><img src="ft-overview.jpg" alt="" loading="lazy" style="object-position:left top"></div><span class="plus" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASOS -->
+  <section class="cases" id="casos">
+    <span class="ghost" data-ghost aria-hidden="true">Abrindo a cozinha</span>
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow reveal">Abrindo a cozinha</span>
+        <h2 class="reveal mask">Cada caso com o problema, o que eu construí, as telas e os números</h2>
+        <p class="reveal" style="--d:.1s">O que está no ar aparece como “no ar”. O que ainda está sendo implantado aparece como tal.</p>
+      </div>
+
+      <!-- CASO 01: SCIENCE PRO -->
+      <article class="case" id="caso-science" data-case="Science Pro">
+        <span class="case-num" data-ghost aria-hidden="true">01</span>
+        <div class="reveal">
+          <div class="case-kicker"><span class="num">01</span><span>Produto SaaS · Castanhal (PA)</span><span class="status live">No ar · sciencepro.app.br</span></div>
+          <h3>Science Pro: uma equipe de modelos de IA que transforma 25 a 50 artigos numa revisão de literatura auditada</h3>
+          <p class="case-sub">O produto principal é a <b>Revisão de Literatura</b>. O pesquisador sobe de 25 a 50 artigos em PDF, define tema, objetivo e tipo de revisão (integrativa, sistemática, de escopo), e recebe de 12 a 30 páginas estruturadas, com cada citação conferida contra as fontes. A plataforma entrega a base; o autor revisa, valida e assina. <b>Meu papel:</b> construção com agentes de código (Claude Code e Codex), produto e growth.</p>
+          <div class="links">
+            <a class="link-pill" href="https://www.sciencepro.app.br" target="_blank" rel="noopener">sciencepro.app.br <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+            <a class="link-pill" href="https://dashboard.sciencepro.app.br/verificar/6c94b110" target="_blank" rel="noopener">Verificar um selo público <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+        </div>
+        <div class="kpis-row reveal">
+          <div class="kpi"><b>25–50</b><span>PDFs por revisão, gerando de 12 a 30 páginas</span></div>
+          <div class="kpi"><b data-count="3">3</b><span>modelos com papéis separados: quem escreve não é quem confere</span></div>
+          <div class="kpi"><b data-count="85">85</b><span>rotas na API do back-end (versão 0.4.0)</span></div>
+          <div class="kpi"><b data-count="15">15</b><span>arquivos entregues por projeto, em PT, EN e ES</span></div>
+        </div>
+        <div class="reveal">
+          <div class="block-title">Orquestração dos modelos</div>
+          <div class="orch">
+            <div class="conductor"><b>Orquestrador do pipeline</b><span>Roda em segundo plano com o estado salvo a cada etapa, mostra o progresso em tempo real e recupera um projeto sem gerar de novo, para não criar custo de LLM surpresa.</span></div>
+            <div class="agents" style="--n:6">
+              <div class="agent" style="--i:0"><span class="model">Qwen</span><b>Leitor</b><span>Lê cada PDF, gera o texto canônico e o fichamento: objetivo, métodos, resultados e limitações.</span></div>
+              <div class="agent" style="--i:1"><span class="model">matriz eixo × fonte</span><b>Sintetizador</b><span>Cruza as fontes por eixo temático e mostra onde concordam, divergem ou faltam dados.</span></div>
+              <div class="agent" style="--i:2"><span class="model">Claude</span><b>Redator</b><span>Escreve e revisa a revisão no formato e no idioma escolhidos.</span></div>
+              <div class="agent" style="--i:3"><span class="model">classificador via OpenRouter</span><b>Auditor de citações</b><span>Confere cada citação com o corpus e marca verde, amarelo ou vermelho. Só classifica, não escreve.</span></div>
+              <div class="agent" style="--i:4"><span class="model">CrossRef</span><b>Referências</b><span>Resolve o DOI de cada artigo e monta as referências na norma escolhida.</span></div>
+              <div class="agent" style="--i:5"><span class="model">determinístico</span><b>PRISMA</b><span>Fluxograma e checklist PRISMA 2020 de 27 itens com os números reais da busca, sem inventar nada.</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="block-title">Pipeline da revisão de literatura</div>
+          <div class="canvas" data-flow>
+            <div class="canvas-bar"><b>Do corpus de PDFs ao pacote auditado</b><span class="on">em produção</span></div>
+            <ol class="flow">
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4"/></svg></span><b>Upload + DOI</b><span>25 a 50 PDFs; DOI resolvido no CrossRef</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l-4 7v8l-4 3v-11z"/></svg></span><b>Triagem</b><span>confere aderência ao tema antes de gastar IA</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg></span><b>Leitura</b><span class="mdl">Qwen</span><span>texto canônico e fichamentos</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span><b>Matriz + síntese</b><span>eixos temáticos × fontes</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg></span><b>Redação</b><span class="mdl">Claude</span><span>12 a 30 páginas, PT, EN ou ES</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></span><b>Auditoria</b><span class="mdl">verificador</span><span>cada citação contra o corpus</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6"/></svg></span><b>Referências + PRISMA</b><span>ABNT e checklist de 27 itens</span></li>
+              <li><span class="nic ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><b>Pacote auditado</b><span>15 arquivos + selo com QR</span></li>
+            </ol>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="block-title">Telas do produto</div>
+          <div class="tabs" data-tabs>
+            <div class="tab-bar" role="tablist" aria-label="Telas do Science Pro">
+              <button class="tab" type="button" role="tab" aria-selected="true">Site</button>
+              <button class="tab" type="button" role="tab" aria-selected="false">Novo projeto</button>
+              <button class="tab" type="button" role="tab" aria-selected="false">Pipeline</button>
+              <button class="tab" type="button" role="tab" aria-selected="false">Pacote auditado</button>
+            </div>
+            <div class="tab-panels">
+              <figure class="browser tab-panel on"><div class="browser-bar"><i></i><i></i><i></i><span>sciencepro.app.br</span></div><img src="sp-site.jpg" alt="Página inicial do Science Pro: seu artigo científico estruturado em minutos, não em meses" width="1200" height="750" loading="lazy"></figure>
+              <figure class="browser tab-panel"><div class="browser-bar"><i></i><i></i><i></i><span>Novo projeto · tipos de manuscrito</span></div><img src="sp-novo.jpg" alt="Tela de novo projeto com revisão de literatura, TCC para artigo e dados próprios para artigo" width="1100" height="561" loading="lazy"></figure>
+              <figure class="browser tab-panel"><div class="browser-bar"><i></i><i></i><i></i><span>Pipeline · cada etapa com tempo e log</span></div><img src="sp-pipeline.jpg" alt="Tela do pipeline finalizado com as etapas e o tempo de cada uma" width="1100" height="513" loading="lazy"></figure>
+              <figure class="browser tab-panel"><div class="browser-bar"><i></i><i></i><i></i><span>Pacote auditado + declaração de uso de IA</span></div><img src="sp-auditado.jpg" alt="Pacote auditado com manuscrito, selo de rastreabilidade e texto de declaração de uso de IA" width="1100" height="419" loading="lazy"></figure>
+            </div>
+          </div>
+        </div>
+        <div class="case-cols reveal">
+          <div class="cbox"><small>Contra alucinação</small><ul><li>Matriz de aderência: cada citação verde, amarela ou vermelha</li><li>Recomenda só artigos reais com DOI (OpenAlex, CrossRef, Semantic Scholar); nunca cria referência</li><li>PRISMA com os números que o autor informa</li><li>Pedir mais páginas aprofunda a discussão, não inventa conteúdo</li></ul></div>
+          <div class="cbox"><small>Plataforma interna e segurança</small><ul><li>Admin com créditos e planos, sempre com motivo registrado</li><li>Painel de custo de LLM por projeto e por chamada</li><li>Créditos com controle à prova de cobrança dupla</li><li>Limite de tentativas contra força bruta, auditoria de login e LGPD (exportar e excluir dados)</li></ul></div>
+          <div class="cbox"><small>IA responsável</small><ul><li>Antes de gerar, o autor confirma a responsabilidade</li><li>Declaração de uso de IA alinhada à Portaria CNPq nº 2.664/2026</li><li>Selo com QR e página pública de verificação</li><li>Controle final sempre humano</li></ul></div>
+        </div>
+        <p class="note">Stack: Python (FastAPI), HTMX, Supabase (autenticação, Postgres e arquivos), Render e Cloudflare, Claude, Qwen, OpenRouter, CrossRef, OpenAlex, Semantic Scholar, Hotmart, Resend e GA4. Desenvolvimento contínuo, com mais de 100 pull requests até julho de 2026.</p>
+      </article>
+
+      <!-- CASO 02: FILME -->
+      <article class="case" id="caso-video" data-case="Filme">
+        <span class="case-num" data-ghost aria-hidden="true">02</span>
+        <div class="reveal">
+          <div class="case-kicker"><span class="num">02</span><span>Science Pro · filme de lançamento</span><span class="status live">Pronto · 16:9 e 9:16</span></div>
+          <h3>Um filme com cara de agência, feito 100% em código por agentes de IA</h3>
+          <p class="case-sub">Eu queria um vídeo de lançamento do nível de uma produtora, sem produtora. Dirigi uma equipe de agentes no Claude Code que escreveu o roteiro, desenhou o storyboard e programou cada quadro em HTML, com 3D, animação de logo e a interface real do produto recriada. <b>Nenhuma imagem de banco ou de gerador de imagem.</b></p>
+        </div>
+        <div class="video-wrap reveal zoom">
+          <video controls playsinline preload="metadata" poster="sp-video-poster.jpg" aria-label="Filme de lançamento do Science Pro, 1 minuto e 44 segundos">
+            <source src="sp-video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="kpis-row reveal">
+          <div class="kpi"><b data-count="179">179</b><span>subagentes em 15 workflows: pesquisa, roteiro, construção e crítica quadro a quadro</span></div>
+          <div class="kpi"><b>~33 h</b><span>do briefing ao filme final, com madrugadas rodando sozinho</span></div>
+          <div class="kpi"><b data-count="24">24</b><span>cenas animadas com GSAP e 3D em CSS, 1:44 a 30 fps</span></div>
+          <div class="kpi"><b data-count="247">247</b><span>palavras da narração sincronizadas com a animação</span></div>
+        </div>
+        <div class="reveal">
+          <div class="block-title">Como a orquestra funcionou</div>
+          <div class="orch">
+            <div class="conductor"><b>Eu, na direção</b><span>34 mensagens de direção, a maioria por voz. Eu aprovo, corto e mando refazer.</span></div>
+            <div class="agents" style="--n:6">
+              <div class="agent" style="--i:0"><span class="model">8 agentes</span><b>Pesquisa</b><span>Estudam o produto, o público e referências de motion.</span></div>
+              <div class="agent" style="--i:1"><span class="model">3 diretores + 3 jurados</span><b>Roteiro</b><span>Cada diretor propõe um filme; os jurados escolhem e a síntese junta o melhor.</span></div>
+              <div class="agent" style="--i:2"><span class="model">em paralelo</span><b>Construtores</b><span>Programam as cenas em HTML, GSAP e 3D em CSS.</span></div>
+              <div class="agent" style="--i:3"><span class="model">por gravidade</span><b>Críticos quadro a quadro</b><span>Apontam erros por gravidade antes de cada nova versão.</span></div>
+              <div class="agent" style="--i:4"><span class="model">integradores</span><b>Montagem</b><span>Juntam as cenas, sincronizam a voz e conferem o render.</span></div>
+              <div class="agent" style="--i:5"><span class="model">QA automático</span><b>Controle de qualidade</b><span>Garante que nenhum trecho fica parado e que o áudio sai no volume padrão das plataformas.</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="block-title">Quadros do filme</div>
+          <div class="film" data-film>
+            <div class="film-strip">
+              <figure><img src="sp-video-f1.jpg" alt="Voo rasante sobre um campo de barras 3D com números" loading="lazy"><figcaption>Dados viram campo de barras 3D</figcaption></figure>
+              <figure><img src="sp-video-f2.jpg" alt="Livro de TCC, barras e PDFs se reunindo" loading="lazy"><figcaption>O material se junta</figcaption></figure>
+              <figure><img src="sp-video-f3.jpg" alt="Matriz de eixos por fonte com barra de progresso do pipeline" loading="lazy"><figcaption>A matriz cruzando as fontes</figcaption></figure>
+              <figure><img src="sp-video-f4.jpg" alt="Caixa do pacote completo abrindo com os entregáveis voando" loading="lazy"><figcaption>O pacote de entregáveis</figcaption></figure>
+              <figure><img src="sp-video-f5.jpg" alt="Entregáveis em bullet time em volta do manuscrito" loading="lazy"><figcaption>Bullet time no manuscrito</figcaption></figure>
+              <figure><img src="sp-video-f6.jpg" alt="Manuscrito com a bandeira do Brasil, versões em três idiomas" loading="lazy"><figcaption>Versões PT, EN e ES</figcaption></figure>
+            </div>
+          </div>
+        </div>
+        <p class="note">Ferramentas: Claude Code, HyperFrames (HTML renderizado em vídeo), GSAP, SVG, ffmpeg, transcrição e alinhamento forçado da narração. Trilha e efeitos sonoros de biblioteca licenciada.</p>
+      </article>
+
+      <!-- CASO 03: SAMAÚ -->
+      <article class="case" id="caso-samau" data-case="Samaú">
+        <span class="case-num" data-ghost aria-hidden="true">03</span>
+        <div class="reveal">
+          <div class="case-kicker"><span class="num">03</span><span>Projeto remunerado · Universidade Federal Rural da Amazônia</span><span class="status live">No ar no site oficial</span></div>
+          <h3>Samaú: a assistente de IA que eu construí para uma universidade federal</h3>
+          <p class="case-sub">O <b>Programa de Pós-Graduação em Saúde e Produção Animal na Amazônia (PPGSPAA) da UFRA</b> tinha editais, prazos, bolsas e contatos espalhados num portal antigo e em vários PDFs. Candidatos perguntavam a mesma coisa toda semana. Construí a Samaú: ela lê o portal e os documentos oficiais e responde no próprio site da universidade, citando de onde tirou cada resposta.</p>
+          <div class="links"><a class="link-pill" href="https://ppgspaa.ufra.edu.br" target="_blank" rel="noopener">ppgspaa.ufra.edu.br <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+        </div>
+        <div class="authority reveal">
+          <span class="seal-ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 5l9 5-9 5z"/><path d="M7 12v5c3 2 7 2 10 0v-5"/></svg></span>
+          <div><b>Cliente: uma universidade federal</b><span>A Samaú é um serviço público no ar: qualquer candidato do Brasil pode usar, no site oficial do programa. A instalação passou pela equipe de TI da universidade.</span></div>
+        </div>
+        <div class="screens reveal" style="grid-template-columns: 1.5fr 1fr; align-items: stretch">
+          <figure class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>ppgspaa.ufra.edu.br · a Samaú aberta no site oficial</span></div><img src="samau-live.jpg" alt="Site oficial do PPGSPAA da UFRA com a Samaú aberta respondendo que o mestrado 2026.2 tem 14 vagas, que o prazo já encerrou e citando o edital" width="1200" height="750" loading="lazy"><figcaption>Print de 17/11/2026, no site oficial do programa.</figcaption></figure>
+          <div class="widget" data-replay aria-label="Replay de uma resposta real da Samaú, de 17/11/2026">
+            <div class="w-head"><img src="samau.jpg" alt="" width="44" height="44" loading="lazy"><div><b>Samaú</b><small>Assistente virtual · PPGSPAA/UFRA</small></div><span class="w-live">replay</span></div>
+            <div class="w-body">
+              <p class="w-msg me" data-s="1">Quantas vagas tem o mestrado 2026.2 e qual o prazo de inscrição?</p>
+              <p class="w-typing" data-typing><i></i><i></i><i></i></p>
+              <div class="w-msg bot" data-s="2">
+                <p>Para o mestrado da turma 2026.2, são ofertadas <b>14 vagas</b>.</p>
+                <p>O período de inscrições ocorreu de 13 de julho a 08 de agosto de 2026 e, portanto, <b>este prazo já está encerrado</b>.</p>
+                <p>Você pode conferir mais detalhes na página oficial do Processo Seletivo 2026.2.</p>
+                <p class="w-src" data-s="3">Fontes: <u>Edital 02/2026 – Seleção Mestrado 2026.2</u> · <u>Processo Seletivo 2026.2 (Mestrado)</u></p>
+              </div>
+            </div>
+            <div class="w-foot"><span>Resposta real, de 17/11/2026.</span><button class="w-replay" type="button">Repetir</button></div>
+          </div>
+        </div>
+        <div class="kpis-row reveal">
+          <div class="kpi"><b>47 + 4</b><span>páginas do portal e PDFs oficiais na base (editais, regimento, bolsas)</span></div>
+          <div class="kpi"><b data-count="155">155</b><span>trechos de conhecimento indexados</span></div>
+          <div class="kpi"><b>~2.400</b><span>tokens por pergunta, medidos</span></div>
+          <div class="kpi"><b>R$ 10–30</b><span>de custo estimado por mês para 3.000 perguntas</span></div>
+        </div>
+        <div class="reveal">
+          <div class="block-title">Arquitetura</div>
+          <div class="canvas" data-flow>
+            <div class="canvas-bar"><b>Pergunta do candidato → resposta com fonte</b><span class="on">no ar</span></div>
+            <ol class="flow">
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><b>Crawler</b><span>coleta 47 páginas do portal (Python)</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span><b>Base de conhecimento</b><span>portal + 4 PDFs em trechos de 1.400 caracteres</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><b>Busca BM25</b><span>escolhe os 6 trechos mais relevantes</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></span><b>Gemini</b><span>persona Samaú responde só com base nos trechos</span></li>
+              <li><span class="nic ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 10h8M8 14h5"/></svg></span><b>Widget no site</b><span>1 linha de script, servida por Cloudflare Worker</span></li>
+            </ol>
+          </div>
+        </div>
+        <div class="case-cols reveal">
+          <div class="cbox"><small>Regras que eu escrevi para ela</small><ul><li>Só responde com base no site e nos documentos oficiais</li><li>Sempre mostra a fonte, com link</li><li>Confere a data de hoje e avisa quando um prazo já passou</li><li>Recusa com educação o que está fora do programa</li></ul></div>
+          <div class="cbox"><small>Segurança e LGPD</small><p>A chave da API fica só no servidor. Limite de 15 perguntas por minuto por IP e lista de sites autorizados. PDFs com nomes de candidatos ficaram fora da base.</p></div>
+          <div class="cbox"><small>Qualidade</small><p>Página de testes com 10 perguntas reais, tempo de resposta e fontes. Pergunta fora do tema recusada em 1,1 s. A assistente avisa que é uma IA e manda conferir o documento oficial.</p></div>
+        </div>
+        <p class="note">Stack: Python (crawler e base), Cloudflare Workers, API do Gemini e widget em JavaScript com avatar e animação de entrada, integrado ao portal Joomla da universidade.</p>
+      </article>
+
+      <!-- CASO 04: CLÍNICA -->
+      <article class="case" id="caso-clinica" data-case="Clínica">
+        <span class="case-num" data-ghost aria-hidden="true">04</span>
+        <div class="reveal">
+          <div class="case-kicker"><span class="num">04</span><span>Cliente real · Clínica Veterinária Miau AuAu, Castanhal (PA)</span><span class="status wip">Testado com a base real · em implantação</span></div>
+          <h3>Sistema de gestão, CRM com funis e automações para uma clínica veterinária</h3>
+          <p class="case-sub">A clínica rodava num sistema antigo em FoxPro, sem visão de faturamento e sem rotina para chamar de volta o cliente que sumiu. Construí um sistema novo do zero, migrei a base inteira e criei uma camada de relacionamento: funis, segmentação, automações e integração com n8n e WhatsApp.</p>
+        </div>
+        <div class="kpis-row reveal">
+          <div class="kpi"><b data-count="2872" data-sep="1">2.872</b><span>clientes e 4.383 pets migrados do sistema antigo</span></div>
+          <div class="kpi"><b data-count="102">102</b><span>tabelas no banco, 25 só do CRM</span></div>
+          <div class="kpi"><b data-count="7">7</b><span>fluxos n8n prontos, um deles com LLM classificando mensagens</span></div>
+          <div class="kpi"><b data-count="12">12</b><span>receitas de automação “Quando → Se → Então”</span></div>
+        </div>
+        <div class="reveal">
+          <div class="block-title">Dashboards e telas</div>
+          <div class="tabs" data-tabs>
+            <div class="tab-bar" role="tablist" aria-label="Telas do sistema da clínica">
+              <button class="tab" type="button" role="tab" aria-selected="true">Painel da direção</button>
+              <button class="tab" type="button" role="tab" aria-selected="false">Funil de orçamentos</button>
+              <button class="tab" type="button" role="tab" aria-selected="false">Segmentação RFM</button>
+              <button class="tab" type="button" role="tab" aria-selected="false">Automações</button>
+            </div>
+            <div class="tab-panels">
+              <figure class="browser tab-panel on"><div class="browser-bar"><i></i><i></i><i></i><span>Início da direção · faturamento, ticket médio e lucro</span></div><img src="sv-inicio.jpg" alt="Painel inicial com faturamento do mês, ticket médio, lucro estimado, fiado em aberto e atendimentos" width="1100" height="618" loading="lazy"></figure>
+              <figure class="browser tab-panel"><div class="browser-bar"><i></i><i></i><i></i><span>Funil de orçamentos · kanban</span></div><img src="sv-funil.jpg" alt="Funil de orçamentos com etapas e chance de fechamento" width="1100" height="618" loading="lazy"></figure>
+              <figure class="browser tab-panel"><div class="browser-bar"><i></i><i></i><i></i><span>Segmentação RFM · quem chamar hoje</span></div><img src="sv-rfm.jpg" alt="Segmentos RFM: campeões, fiéis, em risco, não pode perder e outros" width="1100" height="618" loading="lazy"></figure>
+              <figure class="browser tab-panel"><div class="browser-bar"><i></i><i></i><i></i><span>Automações prontas para ligar</span></div><img src="sv-receitas.jpg" alt="Galeria de receitas de automação como vacina vencendo e cliente em risco" width="1100" height="618" loading="lazy"></figure>
+            </div>
+          </div>
+          <p class="note">Prints da clínica de demonstração usada no treinamento da equipe; nomes de clientes fictícios.</p>
+        </div>
+        <div class="reveal">
+          <div class="block-title">Fluxo de IA no n8n · mensagem do tutor vira tarefa</div>
+          <div class="canvas" data-flow>
+            <div class="canvas-bar"><b>06 · Classificar mensagem com IA</b><span>validado em simulação · liga junto com o WhatsApp oficial</span></div>
+            <ol class="flow">
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h4l3-8 4 16 3-8h2"/></svg></span><b>Webhook</b><span>evento crm.mensagem.recebida</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><b>Confere assinatura</b><span>HMAC: só aceita o que veio do sistema</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></span><b>LLM classifica</b><span>agendamento, dúvida, reclamação, elogio · urgente?</span></li>
+              <li><span class="nic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l-4 7v8l-4 3v-11z"/></svg></span><b>Precisa de alguém?</b><span>regra de decisão</span></li>
+              <li><span class="nic ok"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><b>Cria tarefa</b><span>POST /api/v1/tarefas com chave de idempotência</span></li>
+            </ol>
+          </div>
+          <p class="note">Outros 6 fluxos prontos: resposta do WhatsApp volta para o sistema (com “SAIR” para descadastro), aniversário do pet, resumo do caixa para a direção, alerta de nota baixa, exportação de eventos com limpeza LGPD e confirmação dos agendamentos de amanhã às 16h.</p>
+        </div>
+        <div class="case-cols reveal">
+          <div class="cbox"><small>O que eu construí</small><ul><li>Financeiro: caixa, comandas, fiado com cobrança, contas, estoque, 13 relatórios e DRE</li><li>Agenda, prontuário e consultório</li><li>CRM com ficha 360, RFM, NPS e funis em kanban</li><li>API pública com 21 rotas e webhooks assinados</li></ul></div>
+          <div class="cbox"><small>Como a IA entrou</small><ul><li>Construído com orquestração de agentes: 14 agentes de domínio e 1 integrador</li><li>Auditoria por 9 agentes revisores com verificação adversarial</li><li>No produto: fluxo n8n em que um LLM classifica a mensagem do tutor e abre tarefa para a equipe</li></ul></div>
+          <div class="cbox"><small>Decisões de produto</small><ul><li>Roda offline na rede da clínica, com vários computadores em tempo real</li><li>Funciona como app no celular</li><li>LGPD desde o começo: campanha só com consentimento</li><li>Treinamento junto: 95 slides e guia com 118 tarefas</li></ul></div>
+        </div>
+        <p class="note">Stack: React 19, TypeScript, Node, Fastify, Socket.IO, SQLite, Drizzle, n8n, WhatsApp Cloud API, Vitest e Playwright.</p>
+      </article>
+
+      <!-- CASO 05: MUNDO MIAU AUAU -->
+      <article class="case" id="caso-mundo" data-case="Mundo Miau AuAu">
+        <span class="case-num" data-ghost aria-hidden="true">05</span>
+        <div class="reveal">
+          <div class="case-kicker"><span class="num">05</span><span>Meu primeiro negócio · com meu pai · dos 13 aos 15 anos</span><span class="status live">Loja no ar</span></div>
+          <h3>Mundo Miau AuAu: o e-commerce que eu criei e que passou de R$ 1 milhão</h3>
+          <p class="case-sub">Aos 13 anos eu criei com meu pai a <b>Mundo Miau AuAu</b>, uma loja online de produtos pet. Eu cuidei da loja, dos anúncios, das artes e da operação. Aprendi tráfego pago na prática: foram <b>R$ 200 mil investidos em anúncios</b> até a loja passar de <b>R$ 1 milhão em vendas</b>, quando eu tinha 15.</p>
+          <div class="links"><a class="link-pill" href="https://www.mundomiauauau.com.br" target="_blank" rel="noopener">mundomiauauau.com.br <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+        </div>
+        <div class="screens reveal" style="grid-template-columns: 1fr 1.25fr; align-items: center">
+          <figure class="polaroid" style="margin-inline:auto"><div class="shot" style="aspect-ratio: 769 / 900"><img src="placa-1mi.jpg" alt="Murilo aos 15 anos com as placas de 1 milhão e 500 mil em vendas" width="769" height="900" loading="lazy"></div><figcaption>15 anos · placa de R$ 1 milhão</figcaption></figure>
+          <div>
+            <div class="block-title">A escada das placas</div>
+            <div class="stairs" data-stairs aria-label="Placas de faturamento: 10 mil, 100 mil, 500 mil e 1 milhão de reais em vendas">
+              <div class="stair" style="--h:34%"><b>R$ 10 mil</b><small>14 anos</small></div>
+              <div class="stair" style="--h:56%"><b>R$ 100 mil</b><small>2ª placa</small></div>
+              <div class="stair" style="--h:78%"><b>R$ 500 mil</b><small>3ª placa</small></div>
+              <div class="stair" style="--h:100%"><b>R$ 1 milhão</b><small>15 anos</small></div>
+            </div>
+            <p class="note">Cada degrau é uma placa de faturamento da loja. Os degraus não estão em escala.</p>
+          </div>
+        </div>
+        <div class="kpis-row reveal">
+          <div class="kpi"><b>R$ 1 mi</b><span>em vendas, com placas de 10 mil, 100 mil, 500 mil e 1 milhão</span></div>
+          <div class="kpi"><b>R$ 200 mil</b><span>investidos em anúncios no Facebook, Instagram e Google</span></div>
+          <div class="kpi"><b>13 → 15</b><span>anos de idade, do primeiro pedido ao primeiro milhão</span></div>
+          <div class="kpi"><b>~139</b><span>produtos no catálogo da loja hoje</span></div>
+        </div>
+        <div class="case-cols two reveal">
+          <div class="cbox"><small>O que esse negócio me ensinou</small><p>Ler número todo dia, testar criativo rápido, cuidar de atendimento e de logística. É por isso que, quando eu construo com IA, eu começo pelo problema de negócio e termino com uma métrica.</p></div>
+          <div class="cbox"><small>A loja hoje</small><p>Continua no ar, na Shopify, e agora é operada pela mesma equipe de agentes de IA da Pro Sports: criação de produtos e alterações na loja, com Google Analytics, Google Ads, Merchant Center e Search Console integrados.</p></div>
+        </div>
+        <figure class="browser reveal"><div class="browser-bar"><i></i><i></i><i></i><span>mundomiauauau.com.br</span></div><img src="mm-site.jpg" alt="Página inicial da loja Mundo Miau AuAu com banner de frete grátis" width="1200" height="750" loading="lazy"></figure>
+      </article>
+
+      <!-- CASO 06: PRO SPORTS -->
+      <article class="case" id="caso-prosports" data-case="Pro Sports">
+        <span class="case-num" data-ghost aria-hidden="true">06</span>
+        <div class="reveal">
+          <div class="case-kicker"><span class="num">06</span><span>Cliente com contrato · loja de tênis e beach tennis em Castanhal (PA)</span><span class="status live">No ar</span></div>
+          <h3>Pro Sports: uma loja online construída e operada por uma equipe de agentes de IA</h3>
+          <p class="case-sub">Construí a loja online da Pro Sports com auxílio de inteligência artificial, do catálogo às integrações de marketing. <b>Todos os produtos da loja foram criados com IA, de forma autônoma</b>, por uma equipe de agentes que eu deixei orquestrada só para a Shopify. Com as integrações no lugar, a loja começa a virar resultado de negócio e vendas.</p>
+          <div class="links"><a class="link-pill" href="https://prosportsbr.com.br" target="_blank" rel="noopener">prosportsbr.com.br <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div>
+        </div>
+        <div class="kpis-row reveal">
+          <div class="kpi"><b>100%</b><span>dos produtos da loja criados com auxílio de IA</span></div>
+          <div class="kpi"><b data-count="5">5</b><span>integrações de marketing: GA4, Google Ads, Merchant Center, Search Console e Meta</span></div>
+          <div class="kpi"><b data-count="11">11</b><span>eventos de e-commerce medidos no Google Analytics 4</span></div>
+          <div class="kpi"><b data-count="2">2</b><span>lojas operadas pela mesma equipe de agentes: Pro Sports e Mundo Miau AuAu</span></div>
+        </div>
+        <div class="reveal">
+          <div class="block-title">A equipe de agentes na Shopify</div>
+          <div class="orch">
+            <div class="conductor"><b>Eu, na orquestração</b><span>Deixei pronta uma equipe de agentes específica para criar produtos e fazer alterações dentro da Shopify. Eu defino a regra de negócio; os agentes executam e eu confiro.</span></div>
+            <div class="agents" style="--n:5">
+              <div class="agent" style="--i:0"><span class="model">catálogo</span><b>Criação de produtos</b><span>Do zero, a partir de fotos e informações do fornecedor: título, descrição, variantes e imagens.</span></div>
+              <div class="agent" style="--i:1"><span class="model">preços</span><b>Preços e condições</b><span>Regras de preço e de pagamento aplicadas na loja inteira de uma vez.</span></div>
+              <div class="agent" style="--i:2"><span class="model">tema</span><b>Tema e páginas</b><span>Alterações no tema, nas páginas de produto e no carrinho.</span></div>
+              <div class="agent" style="--i:3"><span class="model">SEO</span><b>SEO</b><span>Títulos, descrições e dados estruturados que o Google lê.</span></div>
+              <div class="agent" style="--i:4"><span class="model">feed</span><b>Feed do Google</b><span>Produtos e preços corretos no Merchant Center e no Google Shopping.</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="block-title">Integração total com Google e Meta</div>
+          <div class="hub">
+            <ul class="hub-col l">
+              <li><b>Google Analytics 4</b><span>11 eventos de e-commerce</span></li>
+              <li><b>Google Ads</b><span>conversão medida</span></li>
+              <li><b>Merchant Center</b><span>feed de produtos e Google Shopping</span></li>
+            </ul>
+            <div class="hub-core"><b>Shopify</b><small>+ equipe de agentes de IA</small></div>
+            <ul class="hub-col r">
+              <li><b>Search Console</b><span>foco em SEO</span></li>
+              <li><b>Meta Pixel + API de Conversões</b><span>medição no servidor</span></li>
+              <li><b>Checkout, pagamento e frete</b><span>Yampi, Appmax e Frenet</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="screens reveal" style="grid-template-columns: 1.35fr 1fr">
+          <figure class="browser"><div class="browser-bar"><i></i><i></i><i></i><span>prosportsbr.com.br</span></div><img src="ps-site.jpg" alt="Página inicial da loja Pro Sports com raquetes em destaque" width="1200" height="750" loading="lazy"></figure>
+          <div style="display:grid; gap:16px">
+            <div class="cbox"><small>Primeiros resultados</small><p>A loja já recebe pedidos pelo canal online, incluindo venda vinda do Google Shopping orgânico. O trabalho agora é escalar com tráfego pago e SEO.</p></div>
+            <div class="cbox"><small>Minha bagagem de marketing</small><p>Eu venho do marketing: tráfego pago, SEO, criativos e análise de campanha fazem parte da minha rotina desde os 13 anos. Hoje a minha área é a inteligência artificial, e é essa bagagem que me faz construir agentes pensando em venda, não só em tecnologia.</p></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- OUTROS -->
+      <article class="case reveal" id="outros">
+        <span class="case-num" aria-hidden="true">+</span>
+        <div>
+          <div class="case-kicker"><span class="num">+</span><span>Outros clientes e faculdade</span></div>
+          <h3>Tráfego, dados e lojas para empresas da região</h3>
+        </div>
+        <div class="case-cols">
+          <div class="cbox"><small>Loc Dress · locação de vestidos</small><p>Gestão dos anúncios no Instagram e no Facebook e relatório mensal feito com IA: os dados das campanhas são analisados em pandas e os slides são gerados com IA. Em um mês foram <b>291 conversas</b> iniciadas com clientes, e a análise mostrou qual formato de anúncio trazia conversa mais barata, o que definiu a verba do mês seguinte.</p></div>
+          <div class="cbox"><small>Céu Azul Store · e-commerce</small><p>Criação de loja Shopify com 35 produtos, banners, domínio, pagamentos, SEO e integrações com GA4, Google Tag Manager, Merchant Center e pixels do Google Ads e da Meta.</p></div>
+          <div class="cbox"><small>FarmTech · FIAP</small><p>Central de operações que integra 6 fases do curso: sensores com ESP32, modelos de ML, YOLO, algoritmo genético e alertas na AWS com 13 recursos via CloudFormation. 44 testes passando.</p></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TRAJETÓRIA -->
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path class="wave-gray" d="M0 70h1440V30c-240-40-480-40-720-10S240 60 0 30Z"/></svg>
+  <section class="journey" id="trajetoria">
+    <span class="ghost" data-ghost aria-hidden="true">Rastreio</span>
+    <div class="wrap">
+      <div class="sec-head center">
+        <span class="eyebrow reveal">Rastreio do pedido</span>
+        <h2 class="reveal mask">De um quarto em Castanhal à IA em produção</h2>
+        <p class="reveal" style="--d:.1s">Ninguém me deu um manual. Eu aprendi do jeito mais caro e mais rápido: fazendo, com dinheiro de verdade em jogo.</p>
+      </div>
+
+      <div class="odo off" id="odo" aria-hidden="true"><small>Vendas da loja</small><b id="odoV">R$ 0</b></div>
+      <div class="tl" id="track">
+        <span class="rider" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
+        <ol class="tl-list">
+          <li>
+            <div class="tl-text reveal from-l">
+              <span class="when">13 anos</span>
+              <h3>Pedido feito</h3>
+              <p>Interior do Pará, um computador e nenhum contato no mercado. Com meu pai, abro a Mundo Miau AuAu, uma loja online de produtos pet, e começo a aprender tudo errando em público.</p>
+              <div class="res"><small>Marco</small><span>Primeiro negócio na internet.</span></div>
+            </div>
+            <span class="pin" aria-hidden="true"></span>
+            <figure class="tl-visual reveal from-r">
+              <div class="sales" aria-label="Ilustração de notificações das primeiras vendas">
+                <div class="sale"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1 13H7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span><div><b>Venda aprovada</b><small>Mundo Miau AuAu · agora</small></div><em>+1 pedido</em></div>
+                <div class="sale"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><div><b>Anúncio no ar</b><small>Tráfego pago · 1º teste</small></div><em>ROAS ↑</em></div>
+                <div class="sale"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Pedido enviado</b><small>Operação · feita em casa</small></div><em>ok</em></div>
+              </div>
+            </figure>
+          </li>
+          <li>
+            <div class="tl-text reveal from-r">
+              <span class="when">14 anos</span>
+              <h3>Em preparo: R$ 10 mil</h3>
+              <p>Aprendo Facebook Ads vendo aula na TV do quarto e testando no dia seguinte. Cada criativo é uma aposta. Cada venda é a prova de que dá.</p>
+              <div class="res"><small>Resultado</small><span>R$ 10 mil em vendas. Primeira placa.</span></div>
+            </div>
+            <span class="pin" aria-hidden="true"></span>
+            <figure class="tl-visual reveal from-l">
+              <figure class="polaroid"><div class="shot"><img src="placa-10k.jpg" alt="Murilo aos 14 anos no quarto, segurando a placa de 10 mil em vendas, com uma aula de Facebook Ads na TV ao fundo" width="688" height="900" loading="lazy"></div><figcaption>14 anos · a primeira placa</figcaption></figure>
+            </figure>
+          </li>
+          <li>
+            <div class="tl-text reveal from-l">
+              <span class="when">14 para 15 anos</span>
+              <h3>Escalando: R$ 100 mil e R$ 500 mil</h3>
+              <p>Mais anúncio, mais pedido, mais caixa para despachar. A operação quase não aguenta o volume. É aqui que eu aprendo a olhar número todo dia e a decidir rápido.</p>
+              <div class="res"><small>Resultado</small><span>Placas de R$ 100 mil e R$ 500 mil em vendas.</span></div>
+            </div>
+            <span class="pin" aria-hidden="true"></span>
+            <figure class="tl-visual reveal from-r">
+              <div class="photo-pair">
+                <figure class="polaroid tilt-r"><div class="shot"><img src="placa-100k.jpg" alt="Murilo sentado com a placa de 100 mil em vendas" width="660" height="900" loading="lazy"></div><figcaption>R$ 100 mil</figcaption></figure>
+                <figure class="polaroid mini"><div class="shot"><img src="placas-trio.jpg" alt="Foto em preto e branco de Murilo segurando as placas de 500 mil, 100 mil e 10 mil" width="653" height="900" loading="lazy"></div><figcaption>500K, 100K e 10K</figcaption></figure>
+              </div>
+            </figure>
+          </li>
+          <li>
+            <div class="tl-text reveal from-r">
+              <span class="when">15 anos</span>
+              <h3>Saiu o primeiro milhão</h3>
+              <p>R$ 200 mil investidos em anúncios viram R$ 1 milhão em vendas na Mundo Miau AuAu. Ajudo minha família e entendo o que eu quero fazer da vida: construir tecnologia que vende e resolve.</p>
+              <div class="res"><small>Resultado</small><span>R$ 1 milhão em vendas aos 15 anos.</span></div>
+            </div>
+            <span class="pin" aria-hidden="true"></span>
+            <figure class="tl-visual reveal from-l">
+              <figure class="polaroid wide"><div class="shot" style="aspect-ratio: 769 / 900"><img src="placa-1mi.jpg" alt="Murilo aos 15 anos sorrindo ao lado das placas de 1 milhão e 500 mil em vendas" width="769" height="900" loading="lazy"></div><figcaption>15 anos · R$ 1 milhão</figcaption></figure>
+            </figure>
+          </li>
+          <li>
+            <div class="tl-text reveal from-l">
+              <span class="when">A IA chega</span>
+              <h3>Novo ingrediente</h3>
+              <p>Eu não espero ninguém me ensinar. Viro usuário diário de ChatGPT, Claude e Gemini, começo a programar com IA e passo a usar agentes em tudo o que faço.</p>
+              <div class="res"><small>Virada</small><span>A IA vira minha principal ferramenta de trabalho.</span></div>
+            </div>
+            <span class="pin" aria-hidden="true"></span>
+            <figure class="tl-visual reveal from-r">
+              <div class="prompt">
+                <div class="prompt-bar"><i></i><i></i><i></i><span>novo chat</span></div>
+                <div class="prompt-body">
+                  <span class="b out">Como eu automatizo o atendimento da loja?</span>
+                  <span class="b in">Dá para montar um fluxo que responde, qualifica e faz o follow-up…</span>
+                  <span class="typing"><i></i><i></i><i></i></span>
+                </div>
+              </div>
+            </figure>
+          </li>
+          <li>
+            <div class="tl-text reveal from-r">
+              <span class="when">Depois do e-commerce</span>
+              <h3>Saiu para entrega: clientes no Pará</h3>
+              <p>Por indicação, empresas do Pará começam a me chamar. Cada uma vira um sistema, uma loja ou uma automação no ar: a clínica Miau AuAu, a Pro Sports, a Loc Dress, a Céu Azul. E o Science Pro vai ao ar.</p>
+              <div class="res"><small>Resultado</small><span>Science Pro no ar, 2.872 clientes migrados na clínica e lojas integradas a Google e Meta.</span></div>
+            </div>
+            <span class="pin" aria-hidden="true"></span>
+            <figure class="tl-visual reveal from-l">
+              <figure class="browser" style="width:min(100%, 460px); transform:rotate(1.5deg)"><div class="browser-bar"><i></i><i></i><i></i><span>Sistema Miau AuAu · início</span></div><img src="sv-inicio.jpg" alt="Painel inicial do sistema da clínica" width="1100" height="618" loading="lazy"></figure>
+            </figure>
+          </li>
+          <li>
+            <div class="tl-text reveal from-l">
+              <span class="when">2026</span>
+              <h3>FIAP e uma universidade federal</h3>
+              <p>Entro em Inteligência Artificial na FIAP. No mesmo ano, o programa de pós-graduação da UFRA coloca no site oficial uma assistente de IA que eu construí: a Samaú.</p>
+              <div class="res"><small>Resultado</small><span>Samaú no ar no site do PPGSPAA/UFRA. FarmTech entregue na FIAP.</span></div>
+            </div>
+            <span class="pin" aria-hidden="true"></span>
+            <figure class="tl-visual reveal from-r">
+              <div class="photo-pair">
+                <figure class="polaroid tilt-r"><div class="shot" style="aspect-ratio: 386 / 604"><img src="samau-widget.jpg" alt="Samaú aberta no site da UFRA respondendo sobre o mestrado" width="386" height="604" loading="lazy"></div><figcaption>Samaú · UFRA</figcaption></figure>
+                <figure class="polaroid mini" style="width:240px"><div class="shot" style="aspect-ratio: 1100 / 483"><img src="ft-overview.jpg" alt="Dashboard FarmTech" width="1100" height="483" loading="lazy"></div><figcaption>FarmTech · FIAP</figcaption></figure>
+              </div>
+            </figure>
+          </li>
+          <li>
+            <div class="tl-text reveal from-r">
+              <span class="when">Próxima parada</span>
+              <h3>iFood Gen AI 2027</h3>
+              <p>Já construí sozinho para empresas pequenas e uma universidade. Agora eu quero aprender a construir IA na escala de milhões de pedidos, com quem faz isso todo dia, e criar agentes que devolvam horas de trabalho para as pessoas do iFood.</p>
+              <div class="res"><small>Status</small><span>Aguardando o iFood aceitar o pedido.</span></div>
+            </div>
+            <span class="pin" aria-hidden="true"></span>
+            <figure class="tl-visual reveal from-l">
+              <div class="status-card">
+                <div class="sc-top"><span class="sc-dot"></span>Aguardando confirmação</div>
+                <ol class="sc-steps">
+                  <li class="ok">Inscrição enviada</li>
+                  <li class="now">Seletiva Gen AI</li>
+                  <li>Início do programa em fevereiro de 2027</li>
+                </ol>
+              </div>
+            </figure>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path class="wave-gray" d="M0 0h1440v20c-240 40-480 50-720 30S240 10 0 40Z"/></svg>
+
+  <!-- MODO DE FAZER -->
+  <section class="modo-sec" id="modo">
+    <span class="ghost" data-ghost aria-hidden="true">Modo de fazer</span>
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow reveal">Meu modo de fazer</span>
+        <h2 class="reveal mask">Do problema ao número que mudou</h2>
+        <p class="reveal" style="--d:.1s">Eu aprendo rápido porque aprendo usando. Vejo uma ferramenta uma ou duas vezes e já coloco num caso real, com cliente esperando.</p>
+      </div>
+
+      <ol class="method" data-method>
+        <li><h3>Entender a operação</h3><p>Converso com quem faz o trabalho e acho onde se perde tempo ou dinheiro.</p></li>
+        <li><h3>Protótipo rápido</h3><p>Monto a primeira versão com IA e vibe coding em dias, não em meses.</p></li>
+        <li><h3>Produção com segurança</h3><p>Chaves no servidor, acesso por função, testes e revisão antes de ir ao ar.</p></li>
+        <li><h3>Medir e ajustar</h3><p>Defino a métrica antes de começar e acompanho depois da entrega.</p></li>
+      </ol>
+
+      <div class="pband reveal flip" id="prompt">
+        <div>
+          <span class="eyebrow">Prompt engineering</span>
+          <h3>A habilidade que eu mais pratico</h3>
+          <p>São <b>anos de prática diária</b> com ChatGPT, Claude e Gemini em trabalho real, desde que a IA generativa chegou. Eu não escrevo um pedido solto: escrevo <b>persona, regras, formato de saída, fonte obrigatória e casos de teste</b>, e reviso o prompt olhando o resultado, não a intenção.</p>
+          <p>É o que faz a Samaú citar o edital, o Science Pro não inventar referência e uma equipe de 179 subagentes entregar um filme coerente.</p>
+        </div>
+        <div class="pcode" aria-label="Estrutura resumida do prompt da Samaú">
+          <div class="pcode-bar"><i></i><i></i><i></i><span>prompt da Samaú · estrutura resumida</span></div>
+          <ol>
+            <li style="--i:0"><b>PERSONA</b><span>Você é a Samaú, assistente virtual do PPGSPAA/UFRA.</span></li>
+            <li style="--i:1"><b>REGRA</b><span>Responda só com base nos trechos oficiais fornecidos.</span></li>
+            <li style="--i:2"><b>FONTE</b><span>Cite o documento de origem, com link, em toda resposta.</span></li>
+            <li style="--i:3"><b>DATA</b><span>Compare cada prazo com a data de hoje e avise se já passou.</span></li>
+            <li style="--i:4"><b>RECUSA</b><span>Se a pergunta fugir do programa, recuse com educação.</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="ingr">
+        <div class="ing tilt reveal" style="--i:0"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/><path d="M6 7l4 3M18 7l-4 3M6 17l4-3M18 17l-4-3"/></svg></span><h3>Orquestração de agentes</h3><p>Divido o trabalho entre agentes com papéis claros (ler, escrever, conferir, criticar, integrar) e fico na direção, aprovando ou mandando refazer.</p><div class="tools"><span>Claude Code</span><span>Codex</span><span>Claude</span><span>GPT</span><span>Gemini</span><span>Qwen</span></div></div>
+        <div class="ing tilt reveal" style="--i:1; --d:.08s"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M9 6h5a4 4 0 0 1 4 4v5"/></svg></span><h3>Automações</h3><p>Fluxos com gatilho, decisão e ação, com assinatura nos webhooks e idempotência para não duplicar nada.</p><div class="tools"><span>n8n</span><span>webhooks</span><span>WhatsApp Cloud API</span></div></div>
+        <div class="ing tilt reveal" style="--i:2; --d:.16s"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg></span><h3>Vibe coding</h3><p>Sistemas completos com a IA programando e eu decidindo produto, revisando e testando. Do protótipo ao ar em dias.</p><div class="tools"><span>Claude Code</span><span>React</span><span>Node</span><span>Python</span><span>Cloudflare</span></div></div>
+        <div class="ing tilt reveal" style="--i:3"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="19" cy="17" r="2"/></svg></span><h3>APIs e integrações</h3><p>Conecto sistemas que não se falavam: lojas, Google, Meta, bases científicas e modelos de IA.</p><div class="tools"><span>Shopify GraphQL</span><span>Merchant Center</span><span>GA4</span><span>Hotmart</span><span>Gemini API</span></div></div>
+        <div class="ing tilt reveal" style="--i:4; --d:.08s"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span><h3>Dados com IA</h3><p>RFM, funil, campanhas e vendas. Começo pela métrica que importa para o dono do negócio e termino com uma decisão.</p><div class="tools"><span>pandas</span><span>dashboards</span><span>GA4</span></div></div>
+        <div class="ing tilt reveal" style="--i:5; --d:.16s"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg></span><h3>RAG e fontes citadas</h3><p>Assistentes que respondem só com base em documentos reais, mostram de onde tiraram e recusam o que não sabem.</p><div class="tools"><span>BM25</span><span>base de conhecimento</span><span>avaliação</span></div></div>
+      </div>
+      <div class="ingr two">
+        <div class="ing tilt reveal" style="--i:6"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l18-7-7 18-2-8z"/></svg></span><h3>Marketing e growth, de onde eu vim</h3><p>Tráfego pago, SEO, criativos e leitura de campanha fazem parte da minha rotina desde os 13 anos: R$ 200 mil em anúncios gerenciados e R$ 1 milhão em vendas. Hoje a minha área principal é a IA, e essa bagagem me faz construir agentes pensando em resultado de negócio. Tenho certificado em Google Ads (Search, Display e Vídeo) pela Escola Brasileira de Marketing Digital.</p><div class="tools"><span>Meta Ads</span><span>Google Ads</span><span>SEO</span><span>Merchant Center</span><span>Search Console</span></div></div>
+        <div class="ing tilt reveal" style="--i:7; --d:.08s"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Cibersegurança de aplicações</h3><p>Também tenho experiência em proteger o que eu coloco no ar: limite de tentativas contra força bruta, auditoria de login, chaves só no servidor, webhooks assinados e cuidado com LGPD. O Science Pro foi construído com essas proteções.</p><div class="tools"><span>rate limiting</span><span>HMAC</span><span>auditoria</span><span>LGPD</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JEITO iFOOD -->
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path class="wave-red" d="M0 70h1440V20c-240 40-480 50-720 20S240 0 0 30Z"/></svg>
+  <section class="jeito-sec on-red" id="jeito">
+    <span class="ghost" data-ghost aria-hidden="true">Jeito iFood</span>
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow reveal">Cultura</span>
+        <h2 class="reveal mask">Meu jeito de trabalhar combina com o jeito iFood</h2>
+        <p class="reveal" style="--d:.1s">Os quatro valores do iFood e o princípio AI First, lado a lado com o que eu já fiz.</p>
+      </div>
+      <div class="stack" id="stack">
+        <article class="stack-card" style="--i:0">
+          <div class="valor"><small>Valor iFood</small><b>Empreendedor</b></div>
+          <div><p>Abri meu primeiro negócio aos 13 e respondi por anúncio, operação, atendimento e caixa. <b>Trato cada projeto como dono</b>: eu vou do problema ao resultado, sem esperar alguém mandar.</p><div class="chips-l"><a href="#caso-mundo">Mundo Miau AuAu</a><a href="#trajetoria">Trajetória</a></div></div>
+        </article>
+        <article class="stack-card" style="--i:1">
+          <div class="valor"><small>Valor iFood</small><b>Resultado</b></div>
+          <div><p>Só considero pronto o que roda no mundo real e tem número: <b>R$ 1 milhão em vendas</b>, 2.872 clientes migrados, uma revisão de literatura em 20 a 30 minutos, uma assistente no ar por R$ 10 a 30 por mês.</p><div class="chips-l"><a href="#pedido">Requisitos conferidos</a><a href="#caso-science">Science Pro</a></div></div>
+        </article>
+        <article class="stack-card" style="--i:2">
+          <div class="valor"><small>Valor iFood</small><b>Inovação</b></div>
+          <div><p>Testo cedo e aprendo rápido. Fiz um filme inteiro com <b>179 subagentes em 33 horas</b>, separei quem escreve de quem confere num pipeline de IA e coloquei RAG num portal antigo de universidade com uma linha de script.</p><div class="chips-l"><a href="#caso-video">Filme</a><a href="#caso-samau">Samaú</a></div></div>
+        </article>
+        <article class="stack-card" style="--i:3">
+          <div class="valor"><small>Valor iFood</small><b>All Together</b></div>
+          <div><p>Construo com quem usa. A equipe da clínica recebeu <b>95 slides e um guia com 118 tarefas</b> para aprender o sistema; na UFRA, a instalação passou pela TI da universidade; no Science Pro, o autor sempre tem a palavra final.</p><div class="chips-l"><a href="#caso-clinica">Clínica</a><a href="#caso-samau">Samaú</a></div></div>
+        </article>
+        <article class="stack-card" style="--i:4">
+          <div class="valor"><small>Princípio iFood</small><b>AI First</b></div>
+          <div><p>No iFood, IA é princípio, não projeto. Eu já trabalho assim: <b>agentes fazem parte de tudo o que eu entrego</b>, e eu redesenho o processo em vez de só acelerar o jeito antigo. Quero fazer isso com o Toqan, na escala de milhões de pedidos.</p><div class="chips-l"><a href="#modo">Modo de fazer</a><a href="#contato">Falar comigo</a></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path class="wave-red" d="M0 0h1440v30c-240 40-480 40-720 10S240 0 0 40Z"/></svg>
+
+  <!-- CONTATO -->
+  <section class="contact-sec" id="contato">
+    <div class="wrap">
+      <div class="contact reveal zoom">
+        <div>
+          <h2>Bora <span>conversar?</span></h2>
+          <p>Estou me candidatando à trilha AI Builder do iFood Gen AI 2027, para trabalhar remoto de Castanhal (PA), 30 horas por semana, a partir de fevereiro de 2027.</p>
+          <div class="ctas">
+            <a class="btn btn-red" href="https://www.linkedin.com/in/murilobrandao-ia" target="_blank" rel="noopener">Abrir meu LinkedIn <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+        </div>
+        <ul>
+          <li><small>LinkedIn</small><a href="https://www.linkedin.com/in/murilobrandao-ia" target="_blank" rel="noopener">linkedin.com/in/murilobrandao-ia</a></li>
+          <li><small>Onde estou</small><span>Castanhal (PA) · trabalho remoto</span></li>
+          <li><small>Formação</small><span>Inteligência Artificial · FIAP · turma 2026</span></li>
+          <li><small>Science Pro no ar</small><a href="https://www.sciencepro.app.br" target="_blank" rel="noopener">sciencepro.app.br</a></li>
+          <li><small>Samaú no ar</small><a href="https://ppgspaa.ufra.edu.br" target="_blank" rel="noopener">ppgspaa.ufra.edu.br</a></li>
+          <li><small>Lojas no ar</small><span><a href="https://www.mundomiauauau.com.br" target="_blank" rel="noopener">mundomiauauau.com.br</a> · <a href="https://prosportsbr.com.br" target="_blank" rel="noopener">prosportsbr.com.br</a></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Portfólio pessoal de Murilo Brandão para o processo seletivo iFood Gen AI 2027.</span>
+    <span>Inspirado na identidade visual do iFood. Não é um site oficial do iFood.</span>
+  </div>
+</footer>
+
+<!-- SACOLA: acompanha quantos casos já foram vistos -->
+<div class="sacola" id="sacola" role="status" aria-live="off">
+  <span class="bag" id="sacolaBag" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><em id="sacolaN">0</em></span>
+  <span class="sacola-t"><b id="sacolaT">0 de 6 casos vistos</b><i></i></span>
+  <a href="#contato">Fechar pedido</a>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var d = document, root = d.documentElement, w = window;
+  var $ = function (s, c) { return (c || d).querySelector(s); };
+  var $$ = function (s, c) { return [].slice.call((c || d).querySelectorAll(s)); };
+  var reduce = !!(w.matchMedia && w.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  var fine = !!(w.matchMedia && w.matchMedia('(hover: hover) and (pointer: fine)').matches);
+  var hasIO = 'IntersectionObserver' in w;
+  var clamp = function (v, a, b) { return v < a ? a : v > b ? b : v; };
+  var vh = function () { return w.innerHeight || root.clientHeight; };
+  var raf = w.requestAnimationFrame ? w.requestAnimationFrame.bind(w) : function (f) { return setTimeout(f, 16); };
+
+  /* ---------- Abertura ---------- */
+  var intro = $('#intro'), introDone = false, afterIntro = [];
+  function endIntro() {
+    if (introDone) return;
+    introDone = true;
+    root.classList.remove('intro-on');
+    if (intro) {
+      intro.classList.add('out');
+      setTimeout(function () { if (intro.parentNode) intro.parentNode.removeChild(intro); }, 950);
+    }
+    afterIntro.forEach(function (f) { f(); });
+  }
+  if (intro && !reduce) {
+    setTimeout(endIntro, 4700);
+    intro.addEventListener('click', endIntro);
+    d.addEventListener('keydown', function (e) { if (e.key === 'Escape') endIntro(); });
+  } else {
+    introDone = true;
+    root.classList.remove('intro-on');
+    if (intro && intro.parentNode) intro.parentNode.removeChild(intro);
+  }
+
+  /* ---------- Revelações: só esconde o que está abaixo da dobra, e só com JS ---------- */
+  if (hasIO && !reduce) {
+    var H0 = vh();
+    var rio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var t = e.target;
+        t.classList.remove('wait');
+        if (t.hasAttribute('data-rv')) $$('.mask.wait', t).forEach(function (m) { m.classList.remove('wait'); });
+        rio.unobserve(t);
+      });
+    }, { rootMargin: '0px 0px -7% 0px', threshold: 0.06 });
+    $$('.reveal').forEach(function (el) {
+      if (el.getBoundingClientRect().top <= H0 * 0.9) return;
+      el.classList.add('wait');
+      /* o título com máscara fica todo recortado enquanto espera, então quem é observado é o bloco pai */
+      if (el.classList.contains('mask')) { el.parentElement.setAttribute('data-rv', ''); rio.observe(el.parentElement); }
+      else rio.observe(el);
+    });
+  } else {
+    root.classList.add('no-io');
+  }
+
+  /* ---------- Motor de scroll: lê tudo, depois escreve tudo, uma vez por quadro ---------- */
+  var trackers = [];
+  function track(el, read, write) {
+    if (!el) return null;
+    var t = { el: el, read: read, write: write, vis: !hasIO, r: null, m: null };
+    trackers.push(t);
+    return t;
+  }
+  var hdr = $('#hdr'), bar = $('#progress'), ribbon = $('#ribbon'), stage = $('#stage'), hero = $('#hero');
+  var ticking = false, lastY = w.pageYOffset || 0;
+  var vTarget = 0, vCur = 0, vRaf = 0;
+  function vLoop() {
+    vCur += (vTarget - vCur) * 0.2;
+    vTarget *= 0.85;
+    if (Math.abs(vCur) > 0.04 || Math.abs(vTarget) > 0.04) {
+      ribbon.style.setProperty('--vel', vCur.toFixed(2));
+      vRaf = raf(vLoop);
+    } else {
+      vRaf = 0; vCur = 0;
+      ribbon.style.setProperty('--vel', '0');
+    }
+  }
+  function frame() {
+    ticking = false;
+    var H = vh(), y = w.pageYOffset || root.scrollTop || 0, docH = root.scrollHeight;
+    var act = [], i, t;
+    for (i = 0; i < trackers.length; i++) {
+      t = trackers[i];
+      if (!t.vis) continue;
+      t.r = t.el.getBoundingClientRect();
+      t.m = t.read ? t.read(t.r, H) : null;
+      act.push(t);
+    }
+    if (hdr) hdr.classList.toggle('scrolled', y > 8);
+    if (bar) bar.style.transform = 'scaleX(' + clamp(y / Math.max(1, docH - H), 0, 1).toFixed(4) + ')';
+    for (i = 0; i < act.length; i++) act[i].write(act[i].r, H, act[i].m, y);
+    var dy = y - lastY; lastY = y;
+    if (ribbon && !reduce && dy && ribbonT && ribbonT.vis) {
+      vTarget = clamp(dy * 0.3, -9, 9);
+      if (!vRaf) vRaf = raf(vLoop);
+    }
+  }
+  function onScroll() { if (!ticking) { ticking = true; raf(frame); } }
+  var noop = function () {};
+  var ribbonT = track(ribbon, null, noop);
+
+  /* Palavras-fantasma e números dos casos deslizam com o scroll */
+  if (!reduce) {
+    $$('[data-ghost]').forEach(function (g) {
+      track(g.parentElement, null, function (r, H) {
+        g.style.setProperty('--gx', clamp((H - r.top) / (H + 320), 0, 1).toFixed(3));
+      });
+    });
+  }
+
+  /* Hero: selos e palavra reagem ao scroll e ao mouse */
+  if (hero && stage && !reduce) {
+    track(hero, null, function (r, H, m, y) { stage.style.setProperty('--sy', clamp(y / H, 0, 1.6).toFixed(3)); });
+    if (fine) {
+      var tx = 0, ty = 0, cx = 0, cy = 0, pRaf = 0;
+      var pLoop = function () {
+        cx += (tx - cx) * 0.09; cy += (ty - cy) * 0.09;
+        stage.style.setProperty('--mx', cx.toFixed(3));
+        stage.style.setProperty('--my', cy.toFixed(3));
+        pRaf = (Math.abs(tx - cx) > 0.002 || Math.abs(ty - cy) > 0.002) ? raf(pLoop) : 0;
+      };
+      hero.addEventListener('pointermove', function (e) {
+        var r = stage.getBoundingClientRect();
+        tx = clamp((e.clientX - (r.left + r.width / 2)) / (w.innerWidth / 2), -1, 1);
+        ty = clamp((e.clientY - (r.top + r.height / 2)) / (vh() / 2), -1, 1);
+        if (!pRaf) pRaf = raf(pLoop);
+      });
+      hero.addEventListener('pointerleave', function () { tx = 0; ty = 0; if (!pRaf) pRaf = raf(pLoop); });
+    }
+  }
+
+  /* Comanda: cada requisito é conferido quando passa pela tela */
+  var comanda = $('#comanda'), rows = $$('.crow');
+  if (comanda && rows.length) {
+    var ringN = $('#ringN'), b1 = $('#bar1'), b2 = $('#bar2'), b1n = $('#bar1n'), b2n = $('#bar2n');
+    var mqWide = w.matchMedia('(min-width: 901px)'), shown = -1, autoStarted = false;
+    var setCount = function (a, b) {
+      var n = a + b;
+      if (n === shown) return;
+      shown = n;
+      comanda.style.setProperty('--rp', (n / rows.length).toFixed(3));
+      ringN.textContent = n;
+      b1.style.setProperty('--bp', (a / 5).toFixed(3)); b1n.textContent = a;
+      b2.style.setProperty('--bp', (b / 6).toFixed(3)); b2n.textContent = b;
+      comanda.classList.toggle('done', n >= rows.length);
+    };
+    if (reduce || !hasIO) {
+      rows.forEach(function (el) { el.classList.add('on'); });
+      comanda.classList.add('done');
+    } else {
+      setCount(0, 0);
+      track($('#check'), function () {
+        return { tops: rows.map(function (el) { return el.classList.contains('on') ? -1 : el.getBoundingClientRect().top; }), ctop: comanda.getBoundingClientRect().top };
+      }, function (r, H, m) {
+        var a = 0, b = 0;
+        rows.forEach(function (el, i) {
+          if (!el.classList.contains('on') && m.tops[i] < H * 0.76) el.classList.add('on');
+          if (el.classList.contains('on')) { if (el.getAttribute('data-g') === '1') a++; else b++; }
+        });
+        if (mqWide.matches) { setCount(a, b); return; }
+        /* no celular a comanda não acompanha a lista: ela se confere sozinha ao aparecer */
+        if (!autoStarted && m.ctop < H * 0.72) {
+          autoStarted = true;
+          var k = 0, iv = setInterval(function () {
+            k++;
+            setCount(Math.min(k, 5), Math.max(0, k - 5));
+            if (k >= rows.length) clearInterval(iv);
+          }, 130);
+        }
+      });
+    }
+  }
+
+  /* Fluxos: as etapas acendem em sequência */
+  $$('[data-flow]').forEach(function (c) {
+    var lis = $$('.flow > li', c), last = -1;
+    if (reduce || !hasIO) { lis.forEach(function (li) { li.classList.add('lit'); }); return; }
+    track(c, null, function (r, H) {
+      var p = clamp((H * 0.86 - r.top) / (H * 0.5), 0, 1), n = Math.ceil(p * lis.length - 0.001);
+      if (n === last) return;
+      last = n;
+      lis.forEach(function (li, i) { li.classList.toggle('lit', i < n); });
+      var max = c.scrollWidth - c.clientWidth;
+      if (max > 6 && n > 0) {
+        var left = clamp(lis[n - 1].offsetLeft - c.clientWidth * 0.45, 0, max);
+        if (c.scrollTo) c.scrollTo({ left: left, behavior: 'smooth' }); else c.scrollLeft = left;
+      }
+    });
+  });
+
+  /* Película do filme corre com o scroll */
+  $$('[data-film]').forEach(function (f) {
+    var strip = $('.film-strip', f);
+    if (reduce || !hasIO) { f.style.overflowX = 'auto'; return; }
+    track(f, function () { return strip.scrollWidth - f.clientWidth; }, function (r, H, max) {
+      var p = clamp((H - r.top) / (H + r.height), 0, 1);
+      strip.style.transform = 'translate3d(' + (-(max > 0 ? max : 0) * p).toFixed(1) + 'px,0,0)';
+    });
+  });
+
+  /* Escada das placas */
+  $$('[data-stairs]').forEach(function (s) {
+    var st = $$('.stair', s);
+    if (reduce || !hasIO) { st.forEach(function (el) { el.classList.add('lit'); }); return; }
+    track(s, null, function (r, H) {
+      var n = Math.ceil(clamp((H * 0.88 - r.top) / (H * 0.42), 0, 1) * st.length - 0.001);
+      st.forEach(function (el, i) { el.classList.toggle('lit', i < n); });
+    });
+  });
+
+  /* Método em 4 passos */
+  $$('[data-method]').forEach(function (m) {
+    var lis = $$('li', m);
+    if (reduce || !hasIO) { lis.forEach(function (li) { li.classList.add('lit'); }); return; }
+    track(m, null, function (r, H) {
+      var span = Math.max(H * 0.36, r.height * 0.85), p = clamp((H * 0.82 - r.top) / span, 0, 1);
+      m.style.setProperty('--p', p.toFixed(3));
+      lis.forEach(function (li, i) { li.classList.toggle('lit', p > 0.01 && p >= i / (lis.length - 1) - 0.03); });
+    });
+  });
+
+  /* Cartas empilhadas: as de trás encolhem quando a próxima cobre */
+  var stack = $('#stack');
+  if (stack && !reduce) {
+    var cards = $$('.stack-card', stack);
+    track(stack, function () {
+      return cards.map(function (c) { return { top: c.getBoundingClientRect().top, h: c.offsetHeight }; });
+    }, function (r, H, m) {
+      var cov = m.map(function (c, i) {
+        if (!i) return 0;
+        var p = m[i - 1];
+        return clamp((p.top + p.h - c.top) / Math.max(1, p.h - 14), 0, 1);
+      });
+      cards.forEach(function (c, i) {
+        var s = 0;
+        for (var j = i + 1; j < cov.length; j++) s += cov[j];
+        c.style.setProperty('--s', (1 - 0.04 * s).toFixed(4));
+      });
+    });
+  }
+
+  /* Trajetória: linha que enche, pinos que acendem e hodômetro de vendas */
+  var tl = $('#track'), odo = $('#odo'), odoV = $('#odoV');
+  if (tl) {
+    var tli = $$('.tl-list > li', tl), reachedN = -1, odoVal = 0, odoRaf = 0;
+    var steps = [0, 0, 10000, 500000, 1000000];
+    var fmt = function (v) { return v >= 999500 ? 'R$ 1 milhão' : v >= 1000 ? 'R$ ' + Math.round(v / 1000) + ' mil' : 'R$ ' + Math.round(v); };
+    var odoTo = function (target) {
+      if (!odoV) return;
+      if (reduce) { odoVal = target; odoV.textContent = fmt(target); return; }
+      if (odoRaf && w.cancelAnimationFrame) w.cancelAnimationFrame(odoRaf);
+      var from = odoVal, t0 = performance.now();
+      (function step() {
+        var k = clamp((performance.now() - t0) / 1000, 0, 1), e = 1 - Math.pow(1 - k, 3);
+        odoVal = from + (target - from) * e;
+        odoV.textContent = fmt(odoVal);
+        odoRaf = k < 1 ? raf(step) : 0;
+      })();
+    };
+    track(tl, function () {
+      return tli.map(function (li) { var pin = li.querySelector('.pin'); return li.offsetTop + (pin ? pin.offsetTop + 15 : 0); });
+    }, function (r, H, pins) {
+      var fill = clamp(H * 0.56 - r.top, 0, r.height), n = 0;
+      tl.style.setProperty('--fill', fill.toFixed(1) + 'px');
+      tl.style.setProperty('--fp', (fill / Math.max(1, r.height)).toFixed(4));
+      tli.forEach(function (li, i) { var on = fill >= pins[i] - 2; li.classList.toggle('reached', on); if (on) n++; });
+      if (n !== reachedN) { reachedN = n; odoTo(steps[Math.min(n, 4)]); }
+      if (odo) odo.classList.toggle('off', !(fill > 0 && n < 6 && fill < r.height));
+    });
+  }
+
+  /* Liga o motor só para o que está perto da tela */
+  if (hasIO) {
+    var tio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        for (var i = 0; i < trackers.length; i++) if (trackers[i].el === e.target) trackers[i].vis = e.isIntersecting;
+      });
+      onScroll();
+    }, { rootMargin: '25% 0px 25% 0px' });
+    var seenEls = [];
+    trackers.forEach(function (t) { if (seenEls.indexOf(t.el) < 0) { seenEls.push(t.el); tio.observe(t.el); } });
+  }
+  w.addEventListener('scroll', onScroll, { passive: true });
+  w.addEventListener('resize', onScroll);
+  w.addEventListener('load', onScroll);
+  onScroll();
+
+  /* ---------- Menu: seção ativa ---------- */
+  var navLinks = $$('.nav ul a'), byId = {};
+  navLinks.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+  if (hasIO) {
+    var nio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        navLinks.forEach(function (a) { a.classList.remove('active'); });
+        if (byId[e.target.id]) byId[e.target.id].classList.add('active');
+      });
+    }, { rootMargin: '-45% 0px -54% 0px' });
+    Object.keys(byId).concat(['hero', 'contato']).forEach(function (id) { var s = d.getElementById(id); if (s) nio.observe(s); });
+
+    var cats = $('.cats'), catLinks = $$('.cats a'), catBy = {};
+    catLinks.forEach(function (a) { catBy[a.getAttribute('href').slice(1)] = a; });
+    var kio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var a = catBy[e.target.id];
+        if (!a) return;
+        catLinks.forEach(function (x) { x.classList.remove('on'); });
+        a.classList.add('on');
+        if (cats && cats.scrollWidth > cats.clientWidth + 4 && cats.scrollTo) cats.scrollTo({ left: Math.max(0, a.offsetLeft - 16), behavior: 'smooth' });
+      });
+    }, { rootMargin: '-30% 0px -62% 0px' });
+    $$('.menu-cat').forEach(function (c) { kio.observe(c); });
+  }
+
+  /* ---------- Abas de telas ---------- */
+  $$('[data-tabs]').forEach(function (t) {
+    var tabs = $$('.tab', t), panels = $$('.tab-panel', t);
+    var sel = function (i, focus) {
+      tabs.forEach(function (b, k) { b.setAttribute('aria-selected', k === i ? 'true' : 'false'); b.tabIndex = k === i ? 0 : -1; });
+      panels.forEach(function (p, k) { p.classList.toggle('on', k === i); });
+      if (focus) tabs[i].focus();
+    };
+    panels.forEach(function (p) { p.setAttribute('role', 'tabpanel'); });
+    tabs.forEach(function (b, i) {
+      b.addEventListener('click', function () { sel(i); });
+      b.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight') { e.preventDefault(); sel((i + 1) % tabs.length, true); }
+        else if (e.key === 'ArrowLeft') { e.preventDefault(); sel((i - 1 + tabs.length) % tabs.length, true); }
+      });
+    });
+    sel(0);
+    /* adianta o carregamento das telas escondidas quando o bloco se aproxima */
+    if (hasIO) {
+      var wio = new IntersectionObserver(function (es) {
+        if (!es[0].isIntersecting) return;
+        wio.disconnect();
+        $$('img', t).forEach(function (im) { im.loading = 'eager'; });
+      }, { rootMargin: '60% 0px 60% 0px' });
+      wio.observe(t);
+    }
+  });
+
+  /* ---------- Samaú: replay de uma resposta real ---------- */
+  $$('[data-replay]').forEach(function (wg) {
+    var s1 = $('[data-s="1"]', wg), s2 = $('[data-s="2"]', wg), s3 = $('[data-s="3"]', wg);
+    var typing = $('[data-typing]', wg), btn = $('.w-replay', wg), timers = [];
+    if (reduce || !hasIO || !s1 || !s2 || !s3 || !typing) { wg.classList.add('done'); return; }
+    var later = function (fn, ms) { timers.push(setTimeout(fn, ms)); };
+    var play = function () {
+      timers.forEach(clearTimeout); timers = [];
+      wg.classList.remove('done');
+      [s1, s2, s3].forEach(function (el) { el.classList.remove('show'); });
+      typing.classList.remove('show');
+      later(function () { s1.classList.add('show'); }, 400);
+      later(function () { typing.classList.add('show'); }, 1150);
+      later(function () { typing.classList.remove('show'); s2.classList.add('show'); }, 2700);
+      later(function () { s3.classList.add('show'); }, 3600);
+      later(function () { wg.classList.add('done'); }, 4300);
+    };
+    var io = new IntersectionObserver(function (es) { if (es[0].isIntersecting) { io.disconnect(); play(); } }, { threshold: 0.4 });
+    io.observe(wg);
+    if (btn) btn.addEventListener('click', play);
+  });
+
+  /* ---------- Números que contam ---------- */
+  if (hasIO && !reduce) {
+    var count = function (el) {
+      var to = +el.getAttribute('data-count'), sep = el.hasAttribute('data-sep'), t0 = performance.now();
+      (function step() {
+        var k = clamp((performance.now() - t0) / 1200, 0, 1), v = Math.round(to * (1 - Math.pow(1 - k, 3)));
+        el.textContent = sep ? v.toLocaleString('pt-BR') : v;
+        if (k < 1) raf(step);
+      })();
+    };
+    var cio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { cio.unobserve(e.target); count(e.target); } });
+    }, { threshold: 0.6 });
+    $$('[data-count]').forEach(function (el) { el.textContent = '0'; cio.observe(el); });
+  }
+
+  /* ---------- Cartões que inclinam com o mouse ---------- */
+  if (fine && !reduce) {
+    $$('.tilt').forEach(function (el) {
+      var tRaf = 0, px = 0, py = 0, off = 0;
+      el.addEventListener('pointermove', function (e) {
+        var r = el.getBoundingClientRect();
+        px = (e.clientX - r.left) / r.width - 0.5; py = (e.clientY - r.top) / r.height - 0.5;
+        if (tRaf) return;
+        tRaf = raf(function () {
+          tRaf = 0;
+          clearTimeout(off);
+          el.style.transition = 'transform .14s ease-out, box-shadow .4s, border-color .3s, background .3s';
+          el.style.transform = 'perspective(900px) rotateX(' + (-py * 6).toFixed(2) + 'deg) rotateY(' + (px * 8).toFixed(2) + 'deg) translateY(-4px)';
+        });
+      });
+      el.addEventListener('pointerleave', function () {
+        el.style.transition = 'transform .55s cubic-bezier(.34,1.56,.64,1), box-shadow .4s, border-color .3s, background .3s';
+        el.style.transform = '';
+        off = setTimeout(function () { el.style.transition = ''; }, 600);
+      });
+    });
+  }
+
+  /* ---------- Sacola: quantos casos já foram vistos ---------- */
+  var sac = $('#sacola'), cases = $$('article.case[data-case]');
+  if (sac && hasIO && cases.length) {
+    var seen = {}, seenN = 0, pastHero = false, atEnd = false;
+    var sacN = $('#sacolaN'), sacT = $('#sacolaT'), sacBag = $('#sacolaBag');
+    var sacUpd = function () { sac.classList.toggle('show', pastHero && !atEnd && introDone); };
+    afterIntro.push(sacUpd);
+    var sio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var k = e.target.getAttribute('data-case');
+        if (seen[k]) return;
+        seen[k] = 1; seenN++;
+        sacN.textContent = seenN;
+        sacT.textContent = seenN + ' de ' + cases.length + ' casos vistos' + (seenN >= cases.length ? ' ✓' : '');
+        sac.style.setProperty('--sp', (seenN / cases.length).toFixed(3));
+        sacBag.classList.remove('bump'); void sacBag.offsetWidth; sacBag.classList.add('bump');
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    cases.forEach(function (c) { sio.observe(c); });
+    var hio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.target === hero) pastHero = !e.isIntersecting && e.boundingClientRect.top < 0;
+        else atEnd = e.isIntersecting;
+      });
+      sacUpd();
+    }, { threshold: 0 });
+    if (hero) hio.observe(hero);
+    var fim = $('#contato');
+    if (fim) hio.observe(fim);
+  }
+
+  /* ---------- Cartão do pedido: os adicionais não saem ---------- */
+  var toast = $('#toast'), tt = 0;
+  function say(msg) {
+    if (!toast || !msg) return;
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(tt);
+    tt = setTimeout(function () { toast.classList.remove('show'); }, 2600);
+  }
+  var falas = {
+    'add-talento': 'Talento não sai. Vem de fábrica.',
+    'add-dedicacao': 'Dedicação é obrigatória neste combo.',
+    'add-esforco': 'Sem esforço não tem entrega. Mantido.',
+    'add-curiosidade': 'A curiosidade não tem botão de desligar.'
+  };
+  $$('.opt input').forEach(function (cb) {
+    cb.addEventListener('change', function () {
+      if (cb.checked) return;
+      cb.checked = true;
+      var row = cb.closest ? cb.closest('.opt') : cb.parentNode;
+      row.classList.remove('shake'); void row.offsetWidth; row.classList.add('shake');
+      say(falas[cb.id]);
+    });
+  });
+  var mais = $('#mais'), menos = $('#menos');
+  if (mais) mais.addEventListener('click', function () { say('Só tem 1 Murilo em estoque.'); });
+  if (menos) menos.addEventListener('click', function () { say('Menos de 1 não dá, né?'); });
+})();
+</script>
