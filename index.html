@@ -26,7 +26,7 @@
   "jobTitle": "AI Builder",
   "sameAs": ["https://www.linkedin.com/in/murilobrandao-ia"],
   "address": {"@type": "PostalAddress", "addressLocality": "Castanhal", "addressRegion": "PA", "addressCountry": "BR"},
-  "alumniOf": {"@type": "CollegeOrUniversity", "name": "FIAP, graduação em Inteligência Artificial (cursando, turma 2026)"},
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "FIAP, graduação em Inteligência Artificial (cursando, início em 2026, conclusão prevista em dezembro de 2027)"},
   "knowsAbout": ["Prompt engineering avançado", "Orquestração de agentes (Claude, GPT, Gemini)", "Automações com n8n", "Vibe coding", "APIs e webhooks", "Análise de dados com IA", "RAG", "E-commerce", "Tráfego pago e SEO", "Cibersegurança de aplicações"],
   "workExample": [
     {"@type": "CreativeWork", "name": "Science Pro", "url": "https://www.sciencepro.app.br"},
@@ -91,6 +91,7 @@ section { position: relative; padding-block: 96px; overflow-x: clip; }
 .sec-head.center { margin-inline: auto; text-align: center; justify-items: center; }
 /* Palavra-fantasma que desliza com o scroll atrás do título de cada seção */
 .ghost { position: absolute; left: -2%; top: 26px; z-index: 0; font: 800 clamp(96px, 16vw, 220px)/1 var(--font); letter-spacing: -0.06em; color: transparent; -webkit-text-stroke: 1.5px var(--gray-200); white-space: nowrap; pointer-events: none; user-select: none; transform: translate3d(calc(var(--gx, 0) * -180px), 0, 0); }
+.ghost::before { content: attr(data-ghost); }
 .on-red .ghost { -webkit-text-stroke-color: rgba(255,255,255,.2); }
 
 /* ============ ABERTURA ============ */
@@ -893,7 +894,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
               <p>Murilo Brandão. Vem com agentes de IA em produção, uma universidade federal atendida e o histórico de quem já vendeu R$ 1 milhão.</p>
             </div>
             <ul class="combo-items">
-              <li><span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><b>R$ 1 milhão</b><span>em vendas no e-commerce que criei aos 15</span></li>
+              <li><span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><b>R$ 1 milhão</b><span>em vendas aos 15, no e-commerce que criei com meu pai</span></li>
               <li><span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10 12 5l9 5-9 5z"/><path d="M7 12v5c3 2 7 2 10 0v-5"/></svg></span><b>UFRA</b><span>assistente de IA no site de uma universidade federal</span></li>
               <li><span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg></span><b>Science Pro</b><span>revisão de literatura com agentes de IA, no ar</span></li>
               <li><span class="ci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/><path d="M6 7l4 3M18 7l-4 3M6 17l4-3M18 17l-4-3"/></svg></span><b>179 subagentes</b><span>orquestrados num filme feito 100% em código</span></li>
@@ -937,14 +938,13 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     <div class="ribbon-in">
       <div class="marquee">
         <span>Prompt engineering</span><span>Orquestração de agentes</span><span>Claude · GPT · Gemini · Qwen</span><span>RAG</span><span>n8n</span><span>Vibe coding</span><span>APIs e webhooks</span><span>Dados com IA</span><span>Shopify</span><span>Tráfego pago e SEO</span>
-        <span>Prompt engineering</span><span>Orquestração de agentes</span><span>Claude · GPT · Gemini · Qwen</span><span>RAG</span><span>n8n</span><span>Vibe coding</span><span>APIs e webhooks</span><span>Dados com IA</span><span>Shopify</span><span>Tráfego pago e SEO</span>
       </div>
     </div>
   </div>
 
   <!-- COMANDA: REQUISITOS DA VAGA × EVIDÊNCIAS -->
   <section class="check-sec" id="pedido">
-    <span class="ghost" data-ghost aria-hidden="true">Pedido conferido</span>
+    <span class="ghost" data-ghost="Pedido conferido" aria-hidden="true"></span>
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow reveal">Conferindo o pedido</span>
@@ -990,11 +990,11 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
       <div class="ficha reveal flip">
         <div>
           <h3><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span>Resumo em 20 segundos</h3>
-          <p><b>Murilo Brandão</b>, 18 anos, de Castanhal (PA), cursa Inteligência Artificial na FIAP. Criou aos 13 a loja online Mundo Miau AuAu, que passou de <b>R$ 1 milhão em vendas</b> quando ele tinha 15. Hoje constrói com IA: o <b>Science Pro</b> (plataforma no ar que orquestra Claude, Qwen e um modelo verificador para gerar revisões de literatura auditadas), a <b>Samaú</b> (assistente com RAG no site oficial do PPGSPAA da UFRA), o sistema de gestão e CRM de uma clínica veterinária e lojas Shopify operadas por uma equipe de agentes. Vem do marketing digital e hoje tem a IA como área principal.</p>
+          <p><b>Murilo Brandão</b>, 18 anos, de Castanhal (PA), cursa Inteligência Artificial na FIAP. Criou aos 13, com o pai, a loja online Mundo Miau AuAu, que passou de <b>R$ 1 milhão em vendas</b> quando ele tinha 15. Hoje constrói com IA: o <b>Science Pro</b> (plataforma no ar que orquestra Claude, Qwen e um modelo verificador para gerar revisões de literatura auditadas), a <b>Samaú</b> (assistente com RAG no site oficial do PPGSPAA da UFRA), o sistema de gestão e CRM de uma clínica veterinária e lojas Shopify operadas por uma equipe de agentes. Vem do marketing digital e hoje tem a IA como área principal.</p>
         </div>
         <dl>
           <dt>Trilha</dt><dd>AI Builder · iFood Gen AI 2027</dd>
-          <dt>Formação</dt><dd>Inteligência Artificial · FIAP · turma 2026</dd>
+          <dt>Formação</dt><dd>Inteligência Artificial · FIAP · conclusão prevista em dez/2027</dd>
           <dt>Onde</dt><dd>Castanhal (PA) · trabalho remoto</dd>
           <dt>Carga</dt><dd>30 horas por semana, a partir de fevereiro de 2027</dd>
           <dt>Ferramentas</dt><dd>Claude, GPT, Gemini, n8n, Claude Code, Codex, Shopify, Python</dd>
@@ -1009,7 +1009,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 
   <!-- CARDÁPIO -->
   <section class="menu-sec" id="cardapio">
-    <span class="ghost" data-ghost aria-hidden="true">Cardápio</span>
+    <span class="ghost" data-ghost="Cardápio" aria-hidden="true"></span>
     <div class="wrap">
       <div class="store reveal zoom">
         <div class="store-cover" aria-hidden="true"><span>AI Builder</span></div>
@@ -1064,7 +1064,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 
   <!-- CASOS -->
   <section class="cases" id="casos">
-    <span class="ghost" data-ghost aria-hidden="true">Abrindo a cozinha</span>
+    <span class="ghost" data-ghost="Abrindo a cozinha" aria-hidden="true"></span>
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow reveal">Abrindo a cozinha</span>
@@ -1412,7 +1412,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   <!-- TRAJETÓRIA -->
   <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path class="wave-gray" d="M0 70h1440V30c-240-40-480-40-720-10S240 60 0 30Z"/></svg>
   <section class="journey" id="trajetoria">
-    <span class="ghost" data-ghost aria-hidden="true">Rastreio</span>
+    <span class="ghost" data-ghost="Rastreio" aria-hidden="true"></span>
     <div class="wrap">
       <div class="sec-head center">
         <span class="eyebrow reveal">Rastreio do pedido</span>
@@ -1420,7 +1420,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
         <p class="reveal" style="--d:.1s">Ninguém me deu um manual. Eu aprendi do jeito mais caro e mais rápido: fazendo, com dinheiro de verdade em jogo.</p>
       </div>
 
-      <div class="odo off" id="odo" aria-hidden="true"><small>Vendas da loja</small><b id="odoV">R$ 0</b></div>
+      <div class="odo off" id="odo" aria-hidden="true"><small>Vendas da loja</small><b id="odoV"></b></div>
       <div class="tl" id="track">
         <span class="rider" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>
         <ol class="tl-list">
@@ -1552,7 +1552,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 
   <!-- MODO DE FAZER -->
   <section class="modo-sec" id="modo">
-    <span class="ghost" data-ghost aria-hidden="true">Modo de fazer</span>
+    <span class="ghost" data-ghost="Modo de fazer" aria-hidden="true"></span>
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow reveal">Meu modo de fazer</span>
@@ -1604,7 +1604,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   <!-- JEITO iFOOD -->
   <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path class="wave-red" d="M0 70h1440V20c-240 40-480 50-720 20S240 0 0 30Z"/></svg>
   <section class="jeito-sec on-red" id="jeito">
-    <span class="ghost" data-ghost aria-hidden="true">Jeito iFood</span>
+    <span class="ghost" data-ghost="Jeito iFood" aria-hidden="true"></span>
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow reveal">Cultura</span>
@@ -1651,7 +1651,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
         <ul>
           <li><small>LinkedIn</small><a href="https://www.linkedin.com/in/murilobrandao-ia" target="_blank" rel="noopener">linkedin.com/in/murilobrandao-ia</a></li>
           <li><small>Onde estou</small><span>Castanhal (PA) · trabalho remoto</span></li>
-          <li><small>Formação</small><span>Inteligência Artificial · FIAP · turma 2026</span></li>
+          <li><small>Formação</small><span>Inteligência Artificial · FIAP · conclusão prevista em dez/2027</span></li>
           <li><small>Science Pro no ar</small><a href="https://www.sciencepro.app.br" target="_blank" rel="noopener">sciencepro.app.br</a></li>
           <li><small>Samaú no ar</small><a href="https://ppgspaa.ufra.edu.br" target="_blank" rel="noopener">ppgspaa.ufra.edu.br</a></li>
           <li><small>Lojas no ar</small><span><a href="https://www.mundomiauauau.com.br" target="_blank" rel="noopener">mundomiauauau.com.br</a> · <a href="https://prosportsbr.com.br" target="_blank" rel="noopener">prosportsbr.com.br</a></span></li>
@@ -1741,6 +1741,8 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     trackers.push(t);
     return t;
   }
+  /* a faixa rolante precisa de duas cópias para o loop; a segunda é criada aqui para não duplicar o texto no HTML */
+  var mq = $('.marquee'); if (mq) mq.innerHTML += mq.innerHTML;
   var hdr = $('#hdr'), bar = $('#progress'), ribbon = $('#ribbon'), stage = $('#stage'), hero = $('#hero');
   var ticking = false, lastY = w.pageYOffset || 0;
   var vTarget = 0, vCur = 0, vRaf = 0;
